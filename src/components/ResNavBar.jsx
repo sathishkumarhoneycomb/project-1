@@ -29,12 +29,12 @@ function ResNavBar() {
           isSticky ? "bg-dark-blue" : ""
         }`}
       >
-        <div className="container">
-          <a className="navbar-brand" href="#">
+        <div className="container ps-7">
+          <a className="navbar-brand pe-lg-4" href="#">
             <img
               src="https://alpaindia.org/_next/static/media/logo.7ddf3dc7.svg"
               alt="alpa india logo"
-              className="logo-img bg-transparent mx-lg-5"
+              className="logo-img"
             />
           </a>
           <button

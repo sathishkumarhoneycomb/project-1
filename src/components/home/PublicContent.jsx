@@ -2,14 +2,14 @@ function PubContent() {
   return (
     <>
       <section className="section-public-content mb-5">
-        <div className="container pt-5 pb-5">
+        <div className="container">
           <div className="public-content-header text-center mb-5">
             <p className="tertiary-heading">NEWS & EVENTS </p>
             <h2 className="secondary-heading"> Public Content </h2>
           </div>
 
           <div className="public-content-body">
-            <div className="card">
+            <div className="card fs-5">
               <img
                 src="https://alpaindia.org/_next/static/media/news.06881161.jpg"
                 className="card-img-top"
@@ -50,7 +50,7 @@ function PubContent() {
               </div>
             </div>
 
-            <div className="card ">
+            <div className="card fs-5">
               <img
                 src="https://alpaindia.org/_next/static/media/news.06881161.jpg"
                 alt="news-image"
@@ -86,7 +86,7 @@ function PubContent() {
               </div>
             </div>
 
-            <div className="card">
+            <div className="card fs-5">
               <img
                 src="https://alpaindia.org/_next/static/media/news.06881161.jpg"
                 className="card-img-top"
@@ -105,8 +105,8 @@ function PubContent() {
                     .toString()}
                 </date>
                 <div className="card-text ">
-                  <p className="fw-semibold">PRESS RELEASE</p>
-                  <p className="">
+                  <p className="fw-semibold m-0">PRESS RELEASE</p>
+                  <p className="m-0">
                     States Urged to Follow Global Guidelines on Crew Testing
                   </p>
                   <p className="truncate-single-line">

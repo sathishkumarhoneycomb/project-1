@@ -16,6 +16,10 @@
 
     margin : 0 auto;
   }
+
+  .ps-7 {
+    padding-left: 5rem;
+  }
   
   
   .tertiary-heading {
@@ -34,9 +38,8 @@
   }
   
   
-  .primary-heading {
-    font-size: 4.5rem;
-    margin-left: 200px;
+  .title-heading {
+    font-size: 82px;
   }
   
   .bg-dark-blue {

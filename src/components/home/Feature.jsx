@@ -1,9 +1,9 @@
 function FeatureBox() {
   return (
     <>
-      <div className="feature-box   row align-items-start g-5 row-gap-5 ">
+      <div className="feature-box   row mb-lg-5">
         {/* for first row */}
-        <div className="feature-box-text col-7">
+        <div className="feature-box-text col-7 pe-lg-5">
           <p className="tertiary-heading"> BENEVOLENT FUND </p>
           <h2 className="secondary-heading"> ALPA BENEVOLENT FUND </h2>
           <hr />
@@ -34,7 +34,9 @@ function FeatureBox() {
             className="feature-img"
           />
         </div>
+      </div>
 
+      <div className="row ">
         <div className="feature-box-img col-5">
           <img
             src="https://alpaindia.org/_next/static/media/alpa_medical.f0e47759.png"
@@ -43,7 +45,7 @@ function FeatureBox() {
           />
         </div>
 
-        <div className="feature-box-text col-7">
+        <div className="feature-box-text col-7 ps-lg-5">
           <p className="tertiary-heading">INSURANCE </p>
           <h2 className="secondary-heading"> ALPA Medical Insurance </h2>
           <hr />
@@ -76,7 +78,7 @@ function FeatureBox() {
               lakhs
             </li>
           </ul>
-          <div className="d-flex  align-items-center gap-2 mt-2">
+          <div className="d-flex  align-items-center gap-2 my-lg-5">
             <p className="mb-0  color-primary fs-5  fw-bold text-uppercase">
               Read More
             </p>
