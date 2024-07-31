@@ -1,126 +1,79 @@
-
-/* ****************************************** */
-  /*
-
-  primary color: #0C53A6
-  tints:
-
-
-  shades:
-
-
-
-
-
-
-
-
-
-  */
-
-
-
-
-/* ****************************************** */
-
-
-
-
-
-
-
-
-* {
-  margin:0;
-  padding: 0;
-  box-sizing: border-box;
+.lg-heading {
+  font-size: 4.2rem;
 }
 
-.container {
-  max-width: 1400px;
-  margin : 4rem auto;
+.text-justify {
+  text-align: justify;
+}
+
+.fs-5_5 {
+  font-size: 1.15rem;
+}
+
+.mb-6 {
+  margin-bottom: 6rem !important;
 }
 
 
-#section-hero {
-  
+.banner {
+  background: url('https://alpaindia.org/_next/static/media/about_us_banner.95049a88.jpg');
+  background-size: cover;
+  height: 550px;
+}
+
+.hero_main {
+  position: absolute;
+  width: 50%;
+  left: 6%;
+  top: 50%;
+}
+
+
+/* hero section */ 
+
+.section-hero {
   background-image: url("https://alpaindia.org/_next/static/media/home-banner.f1d4c7df.jpg") ;
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-  padding: 10px 0;
-
-  /* color: #fff; */
-
+  height: 100vh; 
 }
 
-.hero-header {
-  display: flex;
-  align-items: center;
-  max-width: 1130px;
-  height: 38px;
-  margin: 0 auto;
+.hero-main {
+  position: absolute;
+  
+  left: 16%;
+  top: 50%;
+}
 
+.hero-header-div {
+  transition: background-color 0.s ;
 }
 
 
-
-.hero-lists {
-  display: flex;
-
-  list-style-type: none;
-  font-size: 1.2rem;
-  margin-right: 1.2rem;
-  margin-left: 1.2rem;
-
+.hero-list-items a{
+  padding: 7px 7px; 
 }
 
-.hero-lists li {
-  padding: 7px 7px;
-}
-
-.hero-lists li:hover {
+.hero-list-items a:hover {
   background-color: gray;
   border-radius: 9px;
-  
-
 }
 
-
-.btns {
-  display: flex;
-  gap: 20px;
-
-}
+.hero-list-items a:link, .hero-list-items a:visited {
+  text-decoration: none;
+  color: #fff;
+} 
 
 .nav-btn {
- background-color: black;
+ background-color: black !important;
  border-radius: 9px;
- padding: 10px 7px;
  font-size: 1.2rem;
- list-style-type: none;
  text-transform: uppercase;
 }
 
 .logo-img {
   width:247px;
   height: 47px;
-  background: transparent;
-}
-.hero-main {
-  max-width: 1130px;
-  margin: 0 auto;
-  margin-top: 300px;
-}
-
-
-
-
-.primary-heading {
-  font-size: 4.5rem;
-  margin-left: 200px;
 }
 
 .hero-description {
@@ -134,190 +87,317 @@
 }
 
 
-
-
-/* ****************************************** */
-/*  SECTION ABOUT US */  
-/* ****************************************** */
-
-.section-about-us {
-  display: flex;
- 
-  gap: 3.5rem;
-}
-
-
-.tertiary-heading {
-  color: #6F6E6E;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  display: inline-block;
-  margin-bottom: 1.1rem;
-}
-
-
-.secondary-heading {
-  color: #0C53A6;
-  font-size: 2.2rem;
-  margin-bottom: 1.2rem;
-}
-
-.about-us-text-header {
-  margin-bottom: 2.8rem;
-}
-
-.about-us-text-body h3 {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-}
-
-.about-us-text-body > p {
-  font-size: 1.3rem;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-}
-
-
-.about-us-text-body-lists {
-  margin-left: 3rem;
-
-}
-
-
-.about-us-text-body-lists >  li {
-    font-size: 1.3rem;
-}
-
-.about-us-text-body-lists >  li > ul {
-  margin-left: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-}
-
-.about-us-text-body-lists >  li > ul > li {
-  margin : 1rem 0;
-  line-height: 1.6;
-}
-
-.list-span {
-  display: block;
-  margin-bottom: 0.8rem;
-}
-
-.span-bold {
-  font-weight: bolder; 
-}
-
-
-.btn-read {
-  font-weight: bolder;
-  font-size: 1.4rem !important;
-  color: #0C53A6;
-  text-transform: uppercase;
-}
-
-.btn-read-div {
-  display: flex;
-  gap: 8px;
-  margin-top: 50px;
-}
-
-/* ****************************************** */
-/*  SECTION OFFERING */  
-/* ****************************************** */
-
-.section-offering {
-  background-color: #EFEFEF;
-}
-
-
-
-.offering-text-header {
-  text-align: center;
-  padding-top: 2rem;
-
-}
-
-.offering-text-body {
-  font-size: 1.2rem;
-}
-
-.offering-text-lists {
-  margin-left: 1rem;
-}
-
-.offering-text-lists li {
-  margin: 1rem 0;
-}
-
-
-/* ****************************************** */
 /*  SECTION FEATURE */  
-/* ****************************************** */
 
-.section-feature {
-  margin-top: 8rem;
+.feature-img {
+  width: 100%;
 }
 
 
-.feature-box  {
-  display: flex;
+.feature-box {
+  margin-top: 5rem;
+}
+
+.truncate-multi-line {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 2; 
+
+}
+.truncate-single-line {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 2; 
+
+}
+.public-content-body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
-.feature-box p {
-  font-size: 1.3rem;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
+.card {
+  padding: 0;
 }
 
-.featureBoxImg {
-  width: 600px;
-  height: 300px;
+.card-text {
+  height: 120px;
 }
 
-.p-sm {
-  margin-bottom: 0.8rem  !important;
+.card-img-top {
+  width: 100%;
+  margin: 0;
 }
 
-.readMoreIcon {
-  height: 24px;
-  width: 24px;
-  margin-top: 5px;
+/* Call To Action                    */
+
+.callToAction {
+  margin-bottom: 5rem;
 }
 
+.cta input {
+  width: 458px;
+  height: 21px;
+  padding: 24px 10px;
+  border-radius: 7px;
+}
 
-.feature-box-list {
-  list-style: none; /* Remove default bullets */
-  padding-left: 1.5em; /* Adjust left padding to align the bullets */
+.cta button { 
+  height: 21px;
+  padding: 24px 24px;
+  border-radius: 7px;
+} 
+
+.section-footer {
+  background: url('https://alpaindia.org/_next/static/media/footer_background.d55883eb.jpg');
+  background-size: cover;
+}
+
+/* ABOUT US PAGE */ 
+
+.breadcrumb {
+  position: absolute;
+  left: 15rem;
+  top: 10rem;
+  display: flex;
+  list-style: none;
+  gap: 1rem;
   font-size: 1.2rem;
 }
 
-.feature-box-list li {
-  position: relative; /* Position relative for pseudo-element positioning */
-  margin-bottom: 0.8rem;
+.breadcrumb-item::before {
+  content: ">";
+  padding-right: .8rem;
 }
 
-.feature-box-list li::before {
-  content: '';
+
+.accordion-btn {
+  background: none;
+  border: none;
+  padding: 0.5rem 1.2rem;
+} 
+
+
+.accordion-btn:hover {
+  background-color: rgb(195, 190, 190);
+  border-bottom: 3px solid #0C53A6;
+}
+
+.accordion-btn.active {
+  border-bottom: 3px solid #0C53A6;
+}
+
+.contactUsBody {
+  height: 500px;
+}
+
+.filter-brightness {
+  filter: brightness(140%);
+}
+
+.enquiryFormBody {
+  
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+
+.enquiry-form-input {
+    width: 680px;
+    height: 5rem;
+    padding: 24px 10px;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(233 233 233 / 1);
+}
+
+.enquiry-form-textarea {
+    width: 680px;
+    height: 8rem;
+    padding: 24px 10px;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(233 233 233 / 1);
+}
+
+
+
+
+
+.sendBtn {
+  background-color: #0C53A6;
+  width: 15rem;
+}
+
+
+
+
+ .signInBody {
+  max-width: 900px;
+  margin: 0 auto;
+ 
+} 
+
+.pos-relative {
+  position:relative;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+  column-gap: 1.5rem;
+}
+
+  
+.form-grid  input:not(input[type="radio"], input[type="checkbox"]),
+.form-grid  select,.form-grid  textarea {
+  width: 100%;
+  height: 51px;
+  display: block;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: rgb(232, 240, 254/1);
+}
+
+.fileUploadIcon ,.fileUploadEL{
   position: absolute;
-  left: -1.5em; /* Adjust left position to align with padding */
-  top: 0.2em; /* Adjust top position to center the bullet vertically */
-  width: 0.4em;
-  height: 0.4em;
-  border: 1px solid black; /* Black border */
-  background-color: rgb(242, 235, 235); /* White inside */
-  border-radius: 50%; /* Make it a circle */
+  top: 0;
+  right: 0;
 }
 
 
+#postalAddress {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: rgb(232, 240, 254/1);
+}
 
-/* ****************************************** */
-/*  SECTION PUBLIC CONTENT  */  
-/* ****************************************** */
+.scale-5 {
+  transform: scale(1.5); /* Adjust the scale to increase or decrease size */ 
+}
 
-.public-content-header {
-  text-align: center;
+.nav-link {
+  color: #fff;
+  font-weight: 480;
+  font-size: 1.2rem;
+}
+
+.nav-link:hover {
+  background-color:rgb(63, 62, 62);
+  border-radius: 7px;
+  color: #fff;
+}
+
+.ps-6 {
+  padding-left: 6rem;
+}
+.about-us-img {
+  width: 100%;
+ 
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .public-content-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .hero-main {
+    position: absolute;
+    top: 25rem;
+    left: 0px;
+    padding: 0 1rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  .hero-main h1 {
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  .hero-description {
+      margin: 0 1rem;
+  }
+
+  .breadcrumb {
+    left: 2rem;
+  }
+
+  .hero_main {
+    position: absolute;
+    width: 90%;
+  }
+  
+  .hero_main h1 {
+    font-size: 2.5rem;
+    line-height:2;
+  }
+  
+  .contactUsBody {
+    height: 1000px;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem; 
+  }
+
+  .show {
+    background-color: #0C53A6; 
+  }
+
+  .navbar-collapse {
+    transition:none;
+  }
+  .navbar-collapse.show {
+    padding: 1rem 2rem;
+  }
+
+  .logo-img {
+    margin-left: 2rem;
+  }
+
+  .iframe-img {
+    display: block;
+    width: 100%;
+    height: 400px !important;
+  }
+.enquiry-form-input {
+  width: 95%;
+}
+.enquiry-form-textarea {
+  width: 95%;
+}
+
+}
+
+
+@media only screen and (max-width: 400px) {
+  .hero-main {
+    top: 250px;
+  }
+
+  .iframe-img-div {
+   height: 350px;
+   padding-left: 0;
+   padding-right: 2px;
+  }
 }
 

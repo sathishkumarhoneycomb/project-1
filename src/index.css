@@ -1,0 +1,82 @@
+/* GENERAL CSS  */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden; 
+  }
+  
+
+  
+  .container {
+    max-width: 1400px;
+
+    margin : 0 auto;
+  }
+  
+  
+  .tertiary-heading {
+    color: #6F6E6E;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  
+  .secondary-heading {
+    color: #0C53A6;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .primary-heading {
+    font-size: 4.5rem;
+    margin-left: 200px;
+  }
+  
+  .bg-dark-blue {
+    background-color: #0C53A6;
+  }
+  
+  .bg-lite-white {
+    background-color: #EFEFEF;
+  }
+  
+  .color-primary {
+    color: #0C53A6;
+  }
+  
+
+
+  @media only screen and (max-width: 768px) {
+    .navbar {
+      width: 100vw;
+    }
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    .logo-img {
+      margin: 0;
+      padding: 0;
+      height: 2.5rem;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 400px) {
+    .container {
+      padding: 0 10px;
+    }
+
+    .contactUsBody {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }

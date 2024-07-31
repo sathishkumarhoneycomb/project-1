@@ -1,16 +1,25 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Hero from "./components/Hero";
-import AboutUs from "./components/AboutUs";
-import Offerings from "./components/Offerings";
-import PubContent from "./components/PublicContent";
+import HomePage from "./pages/HomePage";
+import AboutUsPage from "./pages/AboutUsPage";
+import ContactUsPage from "./pages/ContactUsPage";
+import MemberPage from "./pages/MemberPage";
 
 function App() {
   return (
     <>
-      <Hero />
-      <AboutUs />
-      <Offerings />
-      <PubContent />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutUsPage />} />
+
+          <Route path="/contact" element={<ContactUsPage />} />
+
+          <Route path="/member-signup" element={<MemberPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
