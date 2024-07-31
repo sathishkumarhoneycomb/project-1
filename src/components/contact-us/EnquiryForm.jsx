@@ -34,7 +34,7 @@ function EnquiryForm() {
       <section className="sectionEnquiryForm mb-6">
         <div className="container ">
           <p className="tertiary-heading text-center d-block"> Send us </p>
-          <h2 className="secondary-heading text-center"> Your Enquiry </h2>
+          <h2 className="secondary-heading text-center mb-5"> Your Enquiry </h2>
 
           <div className="pad-5">
             <form
@@ -93,8 +93,7 @@ function EnquiryForm() {
               ></textarea>
 
               <button className="btn btn-lg mt-3 text-white sendBtn">
-                {" "}
-                SEND{" "}
+                SEND
               </button>
             </form>
           </div>

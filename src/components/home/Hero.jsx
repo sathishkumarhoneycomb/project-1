@@ -1,10 +1,9 @@
 import NavBar from "../NavBar";
-import ResNavBar from "../ResNavBar";
+import ResNavBar from "../general-components/ResNavBar";
 
 function Hero() {
   return (
     <>
-      <ResNavBar />
       <div className="section-hero position-relative w-100 mb-5">
         <main className="hero-main">
           <h1 className="title-heading text-white fw-bold">

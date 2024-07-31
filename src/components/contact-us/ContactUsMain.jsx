@@ -16,7 +16,7 @@ function ContactUsMain() {
           </h2>
 
           <div className="contactUsBody  row gap-lg-5 gap-sm-0 gap-md-0">
-            <table className=" align-self-start text-white  bg-dark-blue filter-brightness  col-lg-5 col-md-11 col-sm-11  d-block px-3 pt-5 ">
+            <table className="text-white  bg-dark-blue filter-brightness  col-lg-5 col-md-11 col-sm-11  d-block px-lg-5 py-lg-5 ">
               <tbody className="lh-lg">
                 <tr>
                   <td>

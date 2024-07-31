@@ -1,16 +1,17 @@
 import GeneralHero from "../general-components/GeneralHero";
+import newsEventsBanner from "../../assets/images/banners/news-banner.aa82e734.jpg";
 
-function HeroAboutUs() {
+function NewsEventsHero() {
   return (
     <>
       <GeneralHero
-        path="/about"
-        pathName="About"
-        bgPath="https://alpaindia.org/_next/static/media/about_us_banner.95049a88.jpg"
+        path="/news-events"
+        pathName="News & Events"
+        bgPath={newsEventsBanner}
       >
         <div className="hero_main">
           <h1 className="fw-bolder  text-uppercase fw-bold lh-base page-heading">
-            Bringings the voice of Indian pilots to the fore
+            News & Events{" "}
           </h1>
         </div>
       </GeneralHero>
@@ -18,4 +19,4 @@ function HeroAboutUs() {
   );
 }
 
-export default HeroAboutUs;
+export default NewsEventsHero;

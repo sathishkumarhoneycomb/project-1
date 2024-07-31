@@ -1,4 +1,4 @@
-import AboutUsLists from "../AboutUsLists";
+import AboutUsLists from "../general-components/AboutUsLists";
 import PresentPosition from "./PresentPosition";
 
 import { useState } from "react";
@@ -15,7 +15,7 @@ function Accordion() {
       <div className="accordionComponent">
         <div className=" text-center mb-5 ">
           <button
-            className={`accordion-btn  me-4 shadow-sm   ${
+            className={`accordion-btn   text-uppercase me-5 shadow-sm   ${
               selected == "background" ? "active" : ""
             }`}
             onClick={() => {
@@ -25,7 +25,7 @@ function Accordion() {
             background
           </button>
           <button
-            className={`accordion-btn shadow-sm ${
+            className={`accordion-btn text-uppercase shadow-sm ${
               selected == "presentation" ? "active" : ""
             }`}
             onClick={() => {

@@ -16,28 +16,27 @@
 
 
 .banner {
-  background: url('https://alpaindia.org/_next/static/media/about_us_banner.95049a88.jpg');
-  background-size: cover;
-  height: 550px;
+  height: 600px;
+
 }
 
 .hero_main {
   position: absolute;
   width: 50%;
-  left: 6%;
-  top: 50%;
+  left: 12%;
+  top: 40%;
 }
 
 .nav-link.active {
   color : #fff !important;
 }
 
-
-
-
+/* about us page */
+.page-heading {
+  font-size: 70px;
+}
 
 /* hero section */ 
-
 .section-hero {
   background-image: url("https://alpaindia.org/_next/static/media/home-banner.f1d4c7df.jpg") ;
   background-size: cover;
@@ -94,15 +93,10 @@
 }
 
 
-
-
 /*  SECTION FEATURE */  
-
 .feature-img {
   width: 100%;
 }
-
-
 
 
 .truncate-multi-line {
@@ -174,13 +168,12 @@
   top: 10rem;
   display: flex;
   list-style: none;
-  gap: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .breadcrumb-item::before {
   content: ">";
-  padding-right: .8rem;
+  padding: 0 2.1rem;
 }
 
 
@@ -188,11 +181,12 @@
   background: none;
   border: none;
   padding: 0.5rem 1.2rem;
+  transition: all 0.2s;
 } 
 
 
 .accordion-btn:hover {
-  background-color: rgb(195, 190, 190);
+  background-color: rgb(243 244 246/1);
   border-bottom: 3px solid #0C53A6;
 }
 
@@ -241,7 +235,9 @@
   background-color: #0C53A6;
   width: 15rem;
 }
-
+.sendBtn:hover {
+  background-color: #083a74;
+}
 
 
 
@@ -347,8 +343,11 @@
   }
 
   .hero_main {
-    position: absolute;
-    width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50% !important;
+
+
   }
   
   .hero_main h1 {

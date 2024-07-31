@@ -1,4 +1,4 @@
-import AboutUsTextHeader from "../AboutUsTextHeader";
+import AboutUsTextHeader from "../general-components/AboutUsTextHeader";
 import Accordion from "./Accordion";
 function AboutUsSection() {
   return (

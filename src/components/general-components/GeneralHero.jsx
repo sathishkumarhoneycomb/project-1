@@ -2,12 +2,18 @@ import ResNavBar from "./ResNavBar";
 
 import { NavLink } from "react-router-dom";
 
-function GeneralHero({ path, pathName, children }) {
+function GeneralHero({ path, pathName, children, bgPath }) {
   return (
     <>
       <section className="text-white position-relative w-100 mb-5 ">
-        <ResNavBar />
-        <div className="banner">
+        <div
+          className="banner position-relative"
+          style={{
+            background: `url(${bgPath})`,
+            backgroundSize: "cover",
+            maxWidth: "100%",
+          }}
+        >
           <ul className="breadcrumb">
             <li>
               <NavLink to="/" className="text-decoration-none text-white">

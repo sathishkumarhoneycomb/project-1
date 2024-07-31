@@ -1,5 +1,5 @@
-import AboutUsLists from "../AboutUsLists";
-import AboutUsTextHeader from "../AboutUsTextHeader";
+import AboutUsLists from "../general-components/AboutUsLists";
+import AboutUsTextHeader from "../general-components/AboutUsTextHeader";
 
 function AboutUs() {
   return (

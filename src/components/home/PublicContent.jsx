@@ -24,7 +24,7 @@ function PubContent() {
                     month: "short",
                     year: "numeric",
                   })
-                    .format(new Date("2020-12-09"))
+                    .format(new Date())
                     .toString()}
                 </date>
                 <div className="card-text">

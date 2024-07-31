@@ -1,16 +1,18 @@
+import benevolentFundBanner from "../../assets/images/banners/fund-banner.82a96099.jpg";
+
 import GeneralHero from "../general-components/GeneralHero";
 
-function HeroAboutUs() {
+function BenevolentHero() {
   return (
     <>
       <GeneralHero
-        path="/about"
-        pathName="About"
-        bgPath="https://alpaindia.org/_next/static/media/about_us_banner.95049a88.jpg"
+        path="/alpa-benevolent-fund"
+        pathName="Benevolent Fund"
+        bgPath={benevolentFundBanner}
       >
         <div className="hero_main">
           <h1 className="fw-bolder  text-uppercase fw-bold lh-base page-heading">
-            Bringings the voice of Indian pilots to the fore
+            Alpa Benevolent Fund
           </h1>
         </div>
       </GeneralHero>
@@ -18,4 +20,4 @@ function HeroAboutUs() {
   );
 }
 
-export default HeroAboutUs;
+export default BenevolentHero;

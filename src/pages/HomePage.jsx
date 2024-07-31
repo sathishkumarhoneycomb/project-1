@@ -3,7 +3,7 @@ import AboutUs from "../components/home/AboutUs";
 import Offerings from "../components/home/Offerings";
 import PubContent from "../components/home/PublicContent";
 import CallToAction from "../components/home/CallToAction";
-import Footer from "../components/Footer";
+import Footer from "../components/general-components/Footer";
 
 function HomePage() {
   return (
