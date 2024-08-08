@@ -6,7 +6,7 @@ function Hero() {
     <>
       <div className="section-hero position-relative w-100 mb-5">
         <main className="hero-main">
-          <h1 className="title-heading text-white fw-bold">
+          <h1 className="title-heading text-white fw-bold ps-4">
             GIVING PILOTS A VOICE
           </h1>
           <p className="hero-description lh-lg">

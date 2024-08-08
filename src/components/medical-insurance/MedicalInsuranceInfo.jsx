@@ -1,0 +1,87 @@
+import PremiumCharges from "./PermiumCharges";
+
+function MedicalInsuranceInfo() {
+    return (
+        <>
+        <section className="medicalInsuranceInfoSection">
+        <div className="container"> 
+
+                <div className="text-center mb-5">
+                <p className="tertiary-heading"> THE ORIENTAL INSURANCE COMPANY   </p>
+                <h2 className="secondary-heading"> Medical Insurance </h2>
+                </div>
+                <p className="fw-semibold fs-5_5"> Medical Insurance for the year 2024 - 2025 : Policy Period : 20th June 2024 to 19th June 2025 - Insurance Co : Liberty General Insurance Ltd. </p>
+                <p className="fw-semibold mb-5 fs-5_5"> ALPA India strives for the betterment of Indian pilots regardless of their country of employment. ALPA India offers its pilots and their family a medical insurance plan as part of its commitment to securing their future. </p>
+
+            <table className="table table-bordered table-striped fs-5_5   medicalInsuranceTable mb-5">
+                <thead>
+                        <tr >
+                            <th className="bg-light-blue text-white"> SNO </th>
+                            <th className="bg-light-blue text-white "> COVERAGE </th>
+                            <th className="bg-light-blue text-white"> COVERAGE </th>
+                            <th className="bg-light-blue text-white"> NEW TERMS </th>
+                            <th className="bg-light-blue text-white"> ADDITIONAL BENEFITS </th>
+                        </tr>
+
+                </thead>
+                <tbody className="">
+                        <tr>
+                            <td> 1 </td>
+                            <td> 	Family Definition </td>
+                            <td> 	
+A family floater policy is a health insurance plan which covers the entire family on the payment of a single annual premium. The sum assured covers the entire family and can be used in case of multiple hospitalizations in the family </td>
+<td> Children OR Parents or Parents in-law  (size of the family should not be more than 1+5). Only dependent and unmarried children  upto 25 years covered. Rest - 99 years.</td>
+                                <td>
+                                Children upto 25 yrs <br />
+                                Permanent disabled child, covered without any age limit 
+
+                                </td>
+                        </tr>
+
+
+                        <tr>
+                                    <td> 2 </td>
+                                    <td> Sum Insured family floater basis </td>
+                                    <td> The sum insured is the maximum value for a particular year that the insurance company can pay if hospitalized. Any amount exceeding the sum insured will have to be borne by the employee. Agreed amount on the sum insured will be the maximum amount received in case of medical treatment or hospitalization. </td>
+                                    <td> SUM INSURED     03 Lakhs / 05 Lakhs 10 Lakhs /25 Lakhs & 30 Lakhs </td>
+                                    <td> You can select the coverage as per your family's requirement </td>
+
+
+                        </tr>
+                        <tr>
+                                    <td> 2 </td>
+                                    <td> Sum Insured family floater basis </td>
+                                    <td> The sum insured is the maximum value for a particular year that the insurance company can pay if hospitalized. Any amount exceeding the sum insured will have to be borne by the employee. Agreed amount on the sum insured will be the maximum amount received in case of medical treatment or hospitalization. </td>
+                                    <td> SUM INSURED     03 Lakhs / 05 Lakhs 10 Lakhs /25 Lakhs & 30 Lakhs </td>
+                                    <td> You can select the coverage as per your family's requirement </td>
+
+
+                        </tr>
+                        <tr>
+                                    <td> 2 </td>
+                                    <td> Sum Insured family floater basis </td>
+                                    <td> The sum insured is the maximum value for a particular year that the insurance company can pay if hospitalized. Any amount exceeding the sum insured will have to be borne by the employee. Agreed amount on the sum insured will be the maximum amount received in case of medical treatment or hospitalization. </td>
+                                    <td> SUM INSURED     03 Lakhs / 05 Lakhs 10 Lakhs /25 Lakhs & 30 Lakhs </td>
+                                    <td> You can select the coverage as per your family's requirement </td>
+
+
+                        </tr>
+
+                </tbody>
+
+
+            </table>
+
+            <PremiumCharges /> 
+
+
+       
+            </div>
+        </section>
+        
+        </>
+    )
+}
+
+
+export default MedicalInsuranceInfo;

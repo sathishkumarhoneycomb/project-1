@@ -1,7 +1,7 @@
 function FeatureBox() {
   return (
     <>
-      <div className="feature-box   row mb-lg-5">
+      <div className="feature-box mt-5  row mb-lg-5">
         {/* for first row */}
         <div className="feature-box-text col-7 pe-lg-5">
           <p className="tertiary-heading"> BENEVOLENT FUND </p>

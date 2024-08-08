@@ -3,7 +3,7 @@ import NewsImage from "../../assets/images/app-images/news.06881161.jpg";
 function NewsCard({ cardTitle, cardDate, linkPath, children }) {
   return (
     <>
-      <div className="card fs-5" style={{ width: "30rem" }}>
+      <div className="card  news-cards  fs-5 col" >
         <img
           src="https://alpaindia.org/_next/static/media/news.06881161.jpg"
           className="card-img-top"

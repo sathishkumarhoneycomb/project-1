@@ -10,7 +10,7 @@ function NewsEventsHero() {
         bgPath={newsEventsBanner}
       >
         <div className="hero_main">
-          <h1 className="fw-bolder  text-uppercase fw-bold lh-base page-heading">
+          <h1 className="fw-bolder ms-lg-5 text-uppercase fw-bold lh-base page-heading">
             News & Events{" "}
           </h1>
         </div>

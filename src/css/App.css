@@ -16,14 +16,14 @@
 
 
 .banner {
-  height: 600px;
-
+  height: 550px;
 }
+
 
 .hero_main {
   position: absolute;
-  width: 50%;
-  left: 12%;
+  width: 55%;
+  left: 10%;
   top: 40%;
 }
 
@@ -33,7 +33,7 @@
 
 /* about us page */
 .page-heading {
-  font-size: 70px;
+  font-size: 62px;
 }
 
 /* hero section */ 
@@ -91,7 +91,6 @@
   width:247px;
   height: 47px;
 }
-
 
 /*  SECTION FEATURE */  
 .feature-img {
@@ -164,7 +163,7 @@
 
 .breadcrumb {
   position: absolute;
-  left: 15rem;
+  left: 14rem;
   top: 10rem;
   display: flex;
   list-style: none;
@@ -287,10 +286,19 @@
   transform: scale(1.5); /* Adjust the scale to increase or decrease size */ 
 }
 
+.navbar-nav li {
+  margin: 0 0.5rem;
+}
+
 .nav-link {
   color: #fff;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+}
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .nav-link:hover {
@@ -307,62 +315,93 @@
  
 }
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-  .public-content-body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 2rem;
-  }
+
+.radioBtnsDiv {
+  position: relative;
+}
+
+.memberCheckbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  height: 35px;
+  width: 45px;
+  border-radius: 7px;;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.yes-check {
+  right: 70px;
+}
+
+.no-check {
+  right: 0;
+}
+
+
+/* Admin Login Page  */
+.loginPageMain {
+  margin-top: 8rem;
+}
+
+.blue-gradient {
+  background: linear-gradient(40deg,  #45cafc, #303f9f) !important;
+}
+
+.hover-red:hover {
+  color: red !important;
+}
+
+.green_color {
+  color: #14A048 !important;
+}
+
+.pilot-text:after {
+  content: '';
+  display: block;
+  width: 100%;
+  max-width: 75px;
+  height: 3px;
+  background: #EC8321;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: #d12027;
+  border-top-width: 3px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+
+
+ @media only screen and (max-width: 376px) {
 
   .hero-main {
-    position: absolute;
-    top: 25rem;
-    left: 0px;
-    padding: 0 1rem;
-    margin: 0;
-    text-align: center;
+    width: 100%;
+    padding-left: 0.5rem;
   }
-
-  .hero-main h1 {
-    font-size: 3rem;
-    margin: 0;
-    margin-bottom: 2rem;
-  }
-
   .hero-description {
-      margin: 0 1rem;
+    font-size: 1.15rem;
+    margin: 1rem 2.5rem 1rem 0.8rem;
+  }
+  .logo-img {
+    width: 230px;
+    margin-right: 3rem;
+    
   }
 
-  .breadcrumb {
-    left: 2rem;
-  }
-
-  .hero_main {
-  position: absolute;
-  top: 50%;
-  left: 50% !important;
-
-
-  }
-  
-  .hero_main h1 {
-    font-size: 2.5rem;
-    line-height:2;
-  }
-  
-  .contactUsBody {
-    height: 1000px;
-  }
-
-  .form-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 1rem; 
+  .nav-container {
+    display: block;
   }
 
   .show {
@@ -371,45 +410,79 @@
 
   .navbar-collapse {
     transition:none;
-  }
-  .navbar-collapse.show {
-    padding: 1rem 2rem;
-  }
-
-  .logo-img {
-    margin-left: 2rem;
-  }
-
-  .iframe-img {
-    display: block;
     width: 100%;
-    height: 400px !important;
-  }
-.enquiry-form-input {
-  width: 95%;
-}
-.enquiry-form-textarea {
-  width: 95%;
-}
-
-}
-
-
-@media only screen and (max-width: 400px) {
-  .hero-main {
-    top: 250px;
   }
 
-  .iframe-img-div {
-   height: 350px;
-   padding-left: 0;
-   padding-right: 2px;
-  }
+  .hero_main {
+        width: 82%;
+        left: 32px;
+        top: 40%;
 
-    /* For mobile phones: */
-    [class*="col-"] {
-      width: 100%;
     }
 
-}
+    .page-heading {
+      font-size: 32px;
+    }
 
+    .breadcrumb {
+      left: 2.4rem;
+      top: 7rem;
+    }
+    
+    .accordion-btn {
+      font-size: 0.9rem;
+    }
+
+    .news-cards {
+      margin-bottom: 2rem;
+    }
+
+    .fs-5 {
+      font-size: 1.1rem !important;
+    }
+    
+    table {
+      padding: 1rem 2rem !important;
+      margin-bottom: 3rem;
+    }
+
+    .iframe-img-div {
+      height: 350px;
+      padding-left: 0;
+      padding-right: 2px;
+     }
+    
+     .sectionEnquiryForm  {
+      margin-top: 30rem;
+     }
+
+     .enquiry-form-input {
+      width: 100%;
+     }
+
+     .enquiry-form-textarea {
+      width: 100%;
+     }
+
+     .form-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 1rem; 
+    }
+
+    .radioBtnsDiv {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start !important;
+      margin-top: 3rem;
+
+    }
+
+    .memberCheckbox, .checkmark {
+      position: static;
+    }
+
+    .fileUploadIcon {
+      width: 130px;
+    }
+ }

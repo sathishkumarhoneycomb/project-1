@@ -13,9 +13,9 @@ function Accordion() {
   return (
     <>
       <div className="accordionComponent">
-        <div className=" text-center mb-5 ">
+        <div className=" d-flex justify-content-center mb-5 ">
           <button
-            className={`accordion-btn   text-uppercase me-5 shadow-sm   ${
+            className={`accordion-btn    text-uppercase me-5 shadow-sm   ${
               selected == "background" ? "active" : ""
             }`}
             onClick={() => {

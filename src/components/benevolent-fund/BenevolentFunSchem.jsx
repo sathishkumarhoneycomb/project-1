@@ -2,14 +2,14 @@ function BenevolentFundSchem() {
   return (
     <>
       <section>
-        <div className="container">
+        <div className="container mb-5">
           <p className="tertiary-heading d-block text-center"> Alpa India </p>
           <h2 className="secondary-heading text-center">
             Benevolent fund scheme
           </h2>
 
-          <div className="">
-            <p className="fs-5 lh-lg text-justify">
+          <div className="fs-5_5 lh-lg">
+            <p className="fs-5_5 lh-lg text-justify">
               At the heart of our commitment lies our benevolent scheme,
               designed exclusively for Indian national pilots, which includes
               any Airlines and corporates flying in India or abroad on fixed
@@ -22,40 +22,35 @@ function BenevolentFundSchem() {
               have the safety net they deserve with{" "}
               <span className="fw-bold">guaranteed money back policy. </span>
             </p>
-            <p> Key Highlights of Our Benevolent Scheme: </p>
-            <p>
-              {" "}
+            <p className="fs-5_5"> Key Highlights of Our Benevolent Scheme: </p>
+            <p className="fs-5_5 lh-lg">
               Our updated benevolent scheme, PMU/Death/TMU/TG/GMC 3.0, offers
               comprehensive coverage and benefits tailored to the needs of
               Indian national pilots. Here&apos;s a snapshot of what we offer:{" "}
             </p>
-            <p>Introducing Our Enhanced Benevolent Scheme: </p>
+            <p className="fw-semibold fs-5">Introducing Our Enhanced Benevolent Scheme: </p>
 
-            <ol>
+            <ol className="benevolent-fund-lists">
               <li>
-                {" "}
-                Inclusive Coverage: Open to all Indian national pilots serving
+                <span className="fw-semibold"> Inclusive Coverage: </span> Open to all Indian national pilots serving
                 in airlines and corporates, regardless of their employer or
-                country, up to age 65.{" "}
+                country, up to age 65.
               </li>
               <li>
-                {" "}
-                Comprehensive Protection: Covers instances of Death, PMU, TMU,
+                <span className="fw-semibold" > Comprehensive Protection: </span> Covers instances of Death, PMU, TMU,
                 and Temporary Grounding (TG) for reasons other than medicals.{" "}
               </li>
               <li>
-                {" "}
-                Affordable Premium: Annual premium is Rs 1,20,000 yearly or Rs
-                10,000 Monthly FIXED.{" "}
+                <span className="fw-semibold" > Affordable Premium:  </span> Annual premium is Rs 1,20,000 yearly or Rs
+                10,000 Monthly FIXED.
               </li>
               <li>
-                {" "}
-                New Additions: Introducing Temporary Grounding TG covering TMU,
+              <span className="fw-semibold" > New Additions: </span> Introducing Temporary Grounding TG covering TMU,
                 incidents/accidents, and post-flight BA miss (First instance
-                Only){" "}
+                Only)
               </li>
               <li>
-                Benevolent Cover :
+              <span className="fw-semibold" > Benevolent Cover : </span>
                 <ul>
                   <li> PMU/Death : 2 Crores </li>
                   <li>
@@ -66,23 +61,23 @@ function BenevolentFundSchem() {
                 </ul>
               </li>
               <li>
-                Family Health Insurance: GMC coverage and premium offer the best
+              <span className="fw-semibold" > Family Health Insurance: </span> GMC coverage and premium offer the best
                 rates in the market.
               </li>
               <li>
-                Refund Policy: Benevolent premium at the rate of Rs 72,000 per
+              <span className="fw-semibold" > Refund Policy:  </span> Benevolent premium at the rate of Rs 72,000 per
                 year would be refunded plus 6% on the accumulated fund upon
                 retirement at 65 years of age or if opted to exit after 10
                 years.
               </li>
-              <li>Immediate Coverage: NO cooling-off period</li>
+              <li> <span className="fw-semibold" >  Immediate Coverage:  </span> NO cooling-off period</li>
               <li>
-                Flexibility: With a rise in membership, coverage may be
+              <span className="fw-semibold" > Flexibility: </span> With a rise in membership, coverage may be
                 augmented
               </li>
             </ol>
 
-            <p> Membership Procedure :</p>
+            <p className="fw-semibold fs-5"> Membership Procedure :</p>
             <ol>
               <li>
                 Please ensure your medical assessments for the last 3 years in a
@@ -109,10 +104,9 @@ function BenevolentFundSchem() {
                 supporting documents.
               </li>
               <li>
-                {" "}
                 For Pilots flying with a foreign license, please upload your
                 respective countries medical of last 3 years through your
-                profile on ALPA India website.{" "}
+                profile on ALPA India website.
               </li>
               <li>
                 All necessary documents are required to be uploaded through your
@@ -121,10 +115,9 @@ function BenevolentFundSchem() {
               </li>
             </ol>
             <p>
-              {" "}
               For more details and clarifications, please don't hesitate to
               contact the ALPA Office. We're here to support you every step of
-              the way. Test{" "}
+              the way. Test
             </p>
           </div>
         </div>

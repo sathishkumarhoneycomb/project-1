@@ -1,4 +1,10 @@
 function SignInForm() {
+
+  function handleChange(e) {
+    alert(e.target.value);
+  }
+
+
   return (
     <>
       <section className="sectionSignInForm mb-6">
@@ -180,18 +186,23 @@ function SignInForm() {
                     type="radio"
                     name="member"
                     value="yes"
-                    className="scale-5 me-2"
-                  />{" "}
-                  YES
+                    className="memberCheckbox"
+                    onChange={handleChange}
+                   
+                  />
+                  <span className="checkmark bg-dark-blue yes-check">  YES   </span>
+                  
                 </label>
                 <label>
                   <input
                     type="radio"
                     name="member"
                     value="no"
-                    className="scale-5 me-2"
-                  />{" "}
-                  NO{" "}
+                    className="memberCheckbox"
+                    onChange={handleChange}
+                  />
+                  <span className="checkmark bg-dark-blue no-check"> No   </span>
+                 
                 </label>
               </div>
             </div>
@@ -202,7 +213,7 @@ function SignInForm() {
                 id="flexCheckIndeterminate"
                 className="scale-5 me-2"
               />
-              <label className="fs-5_5 ms-2 mt-2">Indeterminate checkbox</label>
+              <label className="fs-5_5 ms-2 mt-4">I accept all the <a> terms and conditions </a></label>
             </div>
             <div className="text-center mt-5">
               <button className="btn btn-lg sendBtn text-white ">SUBMIT</button>

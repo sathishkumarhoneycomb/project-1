@@ -9,10 +9,13 @@ import MemberPage from "./pages/MemberPage";
 import ResNavBar from "./components/general-components/ResNavBar";
 import NewsEventsPage from "./pages/NewsEventsPage";
 import BenevolentFundPage from "./pages/BenevolentFund";
+import MedicalInsurancePage from "./pages/MedicalInsurancePage";
+import LoginPage from "./pages/LoginPage.jsx";
 
 function App() {
   return (
     <>
+
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<ResNavBar />}>
@@ -29,9 +32,13 @@ function App() {
               path="/alpa-benevolent-fund"
               element={<BenevolentFundPage />}
             />
+
+            <Route path="/medical-insurance" element={<MedicalInsurancePage /> } /> 
+            <Route path="/login" element={<LoginPage /> } />
           </Route>
         </Routes>
       </BrowserRouter>
+      
     </>
   );
 }

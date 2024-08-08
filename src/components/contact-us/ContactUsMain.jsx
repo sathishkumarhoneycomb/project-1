@@ -84,7 +84,7 @@ function ContactUsMain() {
             </table>
             {/* </div> */}
 
-            <div className="iframe-img-div col align-self-lg-stretch align-self-sm-stretch">
+            <div className="iframe-img-div col align-self-lg-stretch align-self-stretch">
               <iframe
                 className="iframe-img w-100 h-100"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7279657788563!2d77.57204257454787!3d13.052979913089874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae178e70928fa5%3A0x3fa479411b164134!2sALPA%20INDIA!5e0!3m2!1sen!2sin!4v1721983754255!5m2!1sen!2sin"

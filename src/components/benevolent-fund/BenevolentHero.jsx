@@ -11,7 +11,7 @@ function BenevolentHero() {
         bgPath={benevolentFundBanner}
       >
         <div className="hero_main">
-          <h1 className="fw-bolder  text-uppercase fw-bold lh-base page-heading">
+          <h1 className="fw-bolder ms-lg-5 text-uppercase fw-bold lh-base page-heading">
             Alpa Benevolent Fund
           </h1>
         </div>

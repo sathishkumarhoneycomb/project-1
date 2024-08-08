@@ -1,8 +1,24 @@
+import { useState, useEffect, useRef } from 'react';
+
 function Footer() {
+
+  
+
+  let row = "row"
+  if(window.innerWidth < 376) {
+    row = "";
+  }
+
+
+  
+  
+
+
+
   return (
     <>
       <footer className="section-footer text-white pb-1">
-        <div className="footer row gap-4 ms-4 pt-5 ">
+        <div className={`footer ${row} gap-4 ms-4 pt-5`} >
           {/* first div  */}
           <div className="footer-card col-3 ">
             <img

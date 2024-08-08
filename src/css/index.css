@@ -12,7 +12,7 @@
 
   
   .container {
-    max-width: 1400px;
+    max-width: 1200px;
 
     margin : 0 auto;
   }
@@ -39,7 +39,7 @@
   
   
   .title-heading {
-    font-size: 82px;
+    font-size: 72px;
   }
   
   .bg-dark-blue {
@@ -54,15 +54,22 @@
     color: #0C53A6;
   }
   
+  .bg-light-blue {
+    background-color: #2464af !important;
+  }
 
-
+/* 
   @media only screen and (max-width: 768px) {
     .navbar {
       width: 100vw;
     }
+    body {
+      overflow-x: hidden;
+    }
     .container {
-      max-width: 100%;
+    width: 100%;
       margin: 0 auto;
+
     }
     .logo-img {
       margin: 0;
@@ -82,4 +89,47 @@
       margin-left: 0;
       margin-right: 0;
     }
+  } */
+
+  @media only screen and (max-width: 768px) {
+    body {
+      overflow-x: hidden;
+    }
+    [class*="col-"] {
+      width: 100%;
+    }
+
+    .public-content-body {
+      display: block;
+    }
+    .public-content-body div {
+      margin-bottom: 1rem;
+    }
+
+  }
+
+  @media only screen and (max-width: 376px) {
+    .title-heading {
+      font-size: 32px;
+      padding-left: 0 !important;
+    }
+
+    .container {
+      padding: 0 2rem;
+    }
+
+    [class*="col-"] {
+      width: 100%;
+    }
+
+    .footer-card h5 {
+      margin-top: 3rem;
+    }
+
+    .banner {
+      height: 412px;
+      background-position: 50% !important;
+    }
+ 
+  
   }
