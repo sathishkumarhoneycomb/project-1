@@ -12,7 +12,7 @@ function LoginPage() {
 
 
                 <div className="row justify-content-center"> 
-                <div className="col-md-5"> 
+                <div className="col-lg-5 col-md-8"> 
        
                 <h1 className="green_color text-center mb-2 pilot-text" > Pilot Login </h1>
                 {/* <hr className=" hr "/>  */}

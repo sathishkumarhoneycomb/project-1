@@ -4,6 +4,8 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+
   
   body {
     overflow-x: hidden; 
@@ -41,6 +43,10 @@
   .title-heading {
     font-size: 72px;
   }
+
+  .page-heading {
+    font-size: 62px;
+  }
   
   .bg-dark-blue {
     background-color: #0C53A6;
@@ -58,38 +64,7 @@
     background-color: #2464af !important;
   }
 
-/* 
-  @media only screen and (max-width: 768px) {
-    .navbar {
-      width: 100vw;
-    }
-    body {
-      overflow-x: hidden;
-    }
-    .container {
-    width: 100%;
-      margin: 0 auto;
 
-    }
-    .logo-img {
-      margin: 0;
-      padding: 0;
-      height: 2.5rem;
-    }
-  }
-
-
-
-  @media only screen and (max-width: 400px) {
-    .container {
-      padding: 0 10px;
-    }
-
-    .contactUsBody {
-      margin-left: 0;
-      margin-right: 0;
-    }
-  } */
 
   @media only screen and (max-width: 768px) {
     body {
@@ -99,12 +74,6 @@
       width: 100%;
     }
 
-    .public-content-body {
-      display: block;
-    }
-    .public-content-body div {
-      margin-bottom: 1rem;
-    }
 
   }
 

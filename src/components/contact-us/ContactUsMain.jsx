@@ -11,12 +11,12 @@ function ContactUsMain() {
       <section className="sectionContactUs mb-6">
         <div className="container">
           <p className="tertiary-heading d-block text-center"> contact us </p>
-          <h2 className="secondary-heading text-center mb-6">
+          <h2 className="secondary-heading text-center mb-md-6">
             We Would Love to Hear from You
           </h2>
 
-          <div className="contactUsBody  row gap-lg-5 gap-sm-0 gap-md-0">
-            <table className="text-white  bg-dark-blue filter-brightness  col-lg-5 col-md-11 col-sm-11  d-block px-lg-5 py-lg-5 ">
+          <div className="contactUsBody  ">
+            <table className="text-white  bg-dark-blue filter-brightness    d-block px-lg-5 py-lg-5 ">
               <tbody className="lh-lg">
                 <tr>
                   <td>
@@ -84,9 +84,9 @@ function ContactUsMain() {
             </table>
             {/* </div> */}
 
-            <div className="iframe-img-div col align-self-lg-stretch align-self-stretch">
+            <div className="iframe-img-div bg-primary ">
               <iframe
-                className="iframe-img w-100 h-100"
+                className="iframe-img w-100 h-100 "
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7279657788563!2d77.57204257454787!3d13.052979913089874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae178e70928fa5%3A0x3fa479411b164134!2sALPA%20INDIA!5e0!3m2!1sen!2sin!4v1721983754255!5m2!1sen!2sin"
                 allowfullscreen=""
               ></iframe>

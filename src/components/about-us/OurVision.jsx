@@ -8,7 +8,7 @@ function OurVision() {
           <p className="tertiary-heading"> Our company vision </p>
           <h2 className="secondary-heading"> Vision </h2>
         </header>
-        <div className="container d-flex flex-column  flex-lg-row flex-md-column flex-sm-column gap-5  ">
+        <div className="container d-flex flex-column  flex-md-row flex-sm-column gap-5">
           <OurVisionCards headingTitle="Technical">
             <ul className=" lh-lg fs-5_5">
               <li>

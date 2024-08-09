@@ -3,6 +3,7 @@ import NewsCard from "./NewsCard";
 function NewsCards() {
   return (
     <>
+    <div className="newsCards">   
       <NewsCard cardTitle="Safety Programme for Pilots" linkPath="#">
         <div className="card-text">
           <p className="truncate-multi-line ">
@@ -46,6 +47,7 @@ function NewsCards() {
           </p>
         </div>
       </NewsCard>
+      </div>
     </>
   );
 }

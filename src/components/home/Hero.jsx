@@ -1,10 +1,14 @@
-import NavBar from "../NavBar";
 import ResNavBar from "../general-components/ResNavBar";
+import HomeBanner from "../../assets/images/banners/home-banner.jpg";
+
+
+const HomeBannerImage = `url(${HomeBanner})`;
+
 
 function Hero() {
   return (
     <>
-      <div className="section-hero position-relative w-100 mb-5">
+      <div className="section-hero position-relative w-100 mb-5" style={{backgroundImage : HomeBannerImage, "backgroundSize": "cover", "backgroundPosition" : "center", "height": "100vh"}}>
         <main className="hero-main">
           <h1 className="title-heading text-white fw-bold ps-4">
             GIVING PILOTS A VOICE

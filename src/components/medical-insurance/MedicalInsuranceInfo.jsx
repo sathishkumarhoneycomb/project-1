@@ -3,7 +3,7 @@ import PremiumCharges from "./PermiumCharges";
 function MedicalInsuranceInfo() {
     return (
         <>
-        <section className="medicalInsuranceInfoSection">
+        <section className="medicalInsuranceInfoSection mb-5">
         <div className="container"> 
 
                 <div className="text-center mb-5">
@@ -48,24 +48,37 @@ A family floater policy is a health insurance plan which covers the entire famil
 
 
                         </tr>
+           
+         
                         <tr>
-                                    <td> 2 </td>
-                                    <td> Sum Insured family floater basis </td>
-                                    <td> The sum insured is the maximum value for a particular year that the insurance company can pay if hospitalized. Any amount exceeding the sum insured will have to be borne by the employee. Agreed amount on the sum insured will be the maximum amount received in case of medical treatment or hospitalization. </td>
-                                    <td> SUM INSURED     03 Lakhs / 05 Lakhs 10 Lakhs /25 Lakhs & 30 Lakhs </td>
-                                    <td> You can select the coverage as per your family's requirement </td>
+
+                            <td> 3 </td>
+                            <td> 	Room Rent Restrictions  </td>
+                            <td>	Sub-limit on room rent would mean that the insurer defines the maximum amount it will pay towards the room rent. ICU No limit. </td>
+                            <td> Normal Room Rent For 3 Lakhs - 3k    5 Lakhs - 6k /  10 Lakhs - 8k /   25 Lakhs -12.5k & 30 Lakhs  - 15k      All other charges in accordance with the Room Rent restriction </td>
+                            <td> &nbsp;  </td>
 
 
                         </tr>
-                        <tr>
-                                    <td> 2 </td>
-                                    <td> Sum Insured family floater basis </td>
-                                    <td> The sum insured is the maximum value for a particular year that the insurance company can pay if hospitalized. Any amount exceeding the sum insured will have to be borne by the employee. Agreed amount on the sum insured will be the maximum amount received in case of medical treatment or hospitalization. </td>
-                                    <td> SUM INSURED     03 Lakhs / 05 Lakhs 10 Lakhs /25 Lakhs & 30 Lakhs </td>
-                                    <td> You can select the coverage as per your family's requirement </td>
 
+                        <tr>
+
+                            <td> 4 </td>
+                            <td> 	30 days , 1st, 2nd 3rd & 4th Year waiting  </td> 
+                            <td> 1.Coverage of Pre-existing Conditions without any waiting period. 2. Waiver of the exclusions relating to the first 30 days of the Policy period. </td> 
+                            <td> Waived </td> 
+                            <td> &nbsp; </td>
 
                         </tr>
+                        <tr> 
+                            <td> 5 </td>
+                            <td> 	Maternity Day 1 </td> 
+                            <td> No waiting period for Maternity   </td> 
+                            <td> Normal & C-section Rs. 1.5 lacs </td>
+                            <td> &nbsp; </td>
+
+                        </tr>
+                        
 
                 </tbody>
 

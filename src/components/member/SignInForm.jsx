@@ -1,9 +1,95 @@
+import { useState, useRef } from "react";
+
+  // const [memberTypeValid, setMemberTypeValid] = useState(true);
+  // const [paymentOptionValid, setPaymentOptionValid] = useState(true);
+    // const [becomeMemberValid, setBecomeMemberValid] = useState(true);
+      // const [aircraftValid, setAircraftValid] = useState(true);
+  // const [photoValid, setPhotoValid] = useState(true);
+  // const [licenseTypeValid, setLicenseTypeValid] = useState(true);
+    // const [airlineValid, setAirlineValid] = useState(true);
+  // const [baseLocationValid, setBaseLocationValid] = useState(true);
+    // const [genderValid, setGenderValid] = useState(true);
+
+
 function SignInForm() {
 
-  function handleChange(e) {
-    alert(e.target.value);
-  }
 
+
+
+  const fileInputRef = useRef(null);
+
+  const [fileError, setFileError] = useState("");
+  const [nameValid, setNameValid] = useState(true);
+  const [emailValid, setEmailValid] = useState(true);
+  const [pwdValid, setPwdValid] = useState(true);
+  const [dobValid, setDobValid] = useState(true);
+  const [phoneValid, setPhoneValid] = useState(true);
+
+  const [panValid, setPanValid] = useState(true);
+  const [adharValid, setAdharValid] = useState(true);
+  const [medicalFileNumberValid, setMedicalFileNumberValid] = useState(true);
+
+  const [positionValid, setPositionValid] = useState(true);
+
+  const [licenseNumberValid, setLicenseNumberValid] = useState(true);
+
+  const [passwordValid, setPasswordValid] = useState(true);
+  const [confirmPasswordValid, setConfirmPasswordValid] = useState(true);
+  const [postalAddressValid, setPostalAddressValid] = useState(true);
+
+ 
+
+
+  const [formData, setFormData] = useState({
+    "name" : "",
+    "email" : "",
+    "dob": "",
+    "phone" : "",
+    "gender": "",
+    "pan" : "",
+    "adhar": "",
+    "medicalFileNumber" : "",
+    "airline" : "",
+    "baseLocation" : "",
+    "position" : "",
+    "aircraft": "",
+    "photo" : null,
+    "licenseType" : "",
+    "licenseNumber" : "",
+    "memberType" : "",
+    "paymentOption" : "",
+    "password" : "",
+    "confirmPassword" : "",
+    "postalAddress": "",
+    "becomeMember": "",
+  })
+
+  const handleFormChange  = (e) =>  {
+    if(e.target.name == "photo") {
+      const file = e.target.files[0];
+
+      const fileType = e.target.files[0].type;
+
+      const validFileTypes = ["image/png", "image/jpg", "image/jpeg"];
+      if(validFileTypes.includes(fileType)) {
+        setFileError("")
+        setFormData((prev) => {
+          return ({...prev, [e.target.name]: file})
+        })
+      } else {
+        setFileError("Please select a valid file")
+      }
+
+
+
+
+    } else {
+      setFormData((prev) => {
+        return ({...prev, [e.target.name]: e.target.value})
+      })
+    }  
+
+  }
 
   return (
     <>
@@ -18,36 +104,54 @@ function SignInForm() {
 
           <form className="signInBody pos-relative ">
             <div className="form-grid">
+
+
               <input
                 type="text"
                 id="name"
                 name="name"
                 placeholder="Name"
                 className=""
+                value={formData.name}
+                onChange={handleFormChange}
                 required
               />
+
+
               <input
                 type="email"
                 id="email"
                 name="email"
                 placeholder="Email"
+                value={formData.email}
+                onChange={handleFormChange}
                 required
               />
+
+
               <input
                 type="date"
                 id="dob"
                 name="dob"
                 placeholder="Date of Birth"
+                value={formData.dob}
+                onChange={handleFormChange}
                 required
               />
+
+
               <input
                 type="tel"
                 id="phone"
                 name="phone"
                 placeholder="Phone"
+                value={formData.phone}
+                onChange={handleFormChange}
                 required
               />
-              <select id="gender" name="gender" required>
+
+
+              <select id="gender" name="gender" value={formData.gender} onChange={handleFormChange} required>
                 <option value="" disabled selected>
                   Select your gender
                 </option>
@@ -55,11 +159,15 @@ function SignInForm() {
                 <option value="female">Female</option>
                 <option value="other">Other</option>
               </select>
+
+
               <input
                 type="text"
                 id="pan"
                 name="pan"
                 placeholder="PAN Number"
+                value={formData.pan}
+                onChange={handleFormChange}
                 required
               />
               <input
@@ -67,16 +175,23 @@ function SignInForm() {
                 id="adhar"
                 name="adhar"
                 placeholder="Adhar Number"
+                value={formData.adhar}
+                onChange={handleFormChange}
                 required
               />
               <input
                 type="text"
                 id="medical"
-                name="medical"
-                placeholder="Medical Number"
+                name="medicalFileNumber"
+                placeholder="DGCA Medical File Number"
+                value={formData.medicalFileNumber}
+                onChange={handleFormChange}
                 required
               />
-              <select id="airline" name="airline" required>
+              <select id="airline" name="airline" 
+                     value={formData.airline}
+                     onChange={handleFormChange}
+              required>
                 <option value="" disabled selected>
                   Select your airline
                 </option>
@@ -84,7 +199,10 @@ function SignInForm() {
                 <option value="airline2">Airline 2</option>
                 <option value="airline3">Airline 3</option>
               </select>
-              <select id="base" name="base" required>
+              <select id="base" name="baseLocation" 
+                     value={formData.base}
+                     onChange={handleFormChange}
+              required>
                 <option value="" disabled selected>
                   Select your base location
                 </option>
@@ -97,9 +215,14 @@ function SignInForm() {
                 id="position"
                 name="position"
                 placeholder="Position"
+                value={formData.position}
+                onChange={handleFormChange}
                 required
               />
-              <select id="aircraft" name="aircraft" required>
+              <select id="aircraft" name="aircraft" 
+                         value={formData.aircraft}
+                         onChange={handleFormChange}
+              required>
                 <option value="" disabled selected>
                   Select aircraft type
                 </option>
@@ -107,6 +230,8 @@ function SignInForm() {
                 <option value="type2">Type 2</option>
                 <option value="type3">Type 3</option>
               </select>
+
+
               <div className="pos-relative mt-2 mb-4">
                 <input
                   type="text"
@@ -116,12 +241,22 @@ function SignInForm() {
                 <img
                   src="https://alpaindia.org/_next/static/media/file-upload.537f20bf.svg"
                   className="fileUploadIcon"
+                  onClick={() => fileInputRef.current.click()}
                 />
-                <input type="file" className="fileUploadEL d-none" />
+                <input type="file"  name="photo" className={`fileUploadEL invisible ${fileError && "is-invalid"}`} ref={fileInputRef}  onChange={handleFormChange} /> 
+                <p className="form-text"> Accepted file types : png, jpg, jpeg</p>
+                {
+                  fileError && <p className="invalid-feedback">{fileError}</p>
+                }
               </div>
+
+
             </div>
             <div className="form-grid">
-              <select id="licenseType" name="licenseType" required>
+              <select id="licenseType" name="licenseType" 
+              value={formData.licenseType}
+              onChange={handleFormChange}
+              required>
                 <option value="" disabled selected>
                   Select license type
                 </option>
@@ -134,9 +269,14 @@ function SignInForm() {
                 id="licenseNumber"
                 name="licenseNumber"
                 placeholder="License Number"
+                value={formData.licenseNumber}
+                onChange={handleFormChange}
                 required
               />
-              <select id="memberType" name="memberType" required>
+              <select id="memberType" name="memberType" 
+                      value={formData.memberType}
+                      onChange={handleFormChange}
+              required>
                 <option value="" disabled selected>
                   Select member type
                 </option>
@@ -144,7 +284,10 @@ function SignInForm() {
                 <option value="member2">Member 2</option>
                 <option value="member3">Member 3</option>
               </select>
-              <select id="paymentOption" name="paymentOption" required>
+              <select id="paymentOption" name="paymentOption" 
+                      value={formData.paymentOption}
+                      onChange={handleFormChange}
+              required>
                 <option value="" disabled selected>
                   Select payment option
                 </option>
@@ -157,6 +300,8 @@ function SignInForm() {
                 id="password"
                 name="password"
                 placeholder="Password"
+                value={formData.password}
+                onChange={handleFormChange}
                 required
               />{" "}
               <input
@@ -164,6 +309,8 @@ function SignInForm() {
                 id="confirmPassword"
                 name="confirmPassword"
                 placeholder="Confirm Password"
+                value={formData.confirmPassword}
+                onChange={handleFormChange}
                 required
               />
             </div>
@@ -173,15 +320,17 @@ function SignInForm() {
               name="postalAddress"
               placeholder="Postal Address"
               rows="3"
+              onChange={handleFormChange}
               required
-            ></textarea>
+            >{formData.postalAddress}</textarea>
 
             <div className="radioBtnsDiv d-flex justify-content-between align-items-center mt-5 ">
+             
               <p className="fs-5_5">
                 Do you want to become ALPA Group Medical Coverage (ALPA GMC) ?{" "}
               </p>
               <div className="d-flex justify-content-around gap-4">
-                <label>
+                {/* <label>
                   <input
                     type="radio"
                     name="member"
@@ -190,9 +339,12 @@ function SignInForm() {
                     onChange={handleChange}
                    
                   />
-                  <span className="checkmark bg-dark-blue yes-check">  YES   </span>
+                  <span className="checkmark bg-dark-blue yes-check">  YES   </span> 
+                       </label> */}
+                  <input type="radio" className="btn-check" id="btn-check-2" name="becomeMember" value="Yes" onChange={handleFormChange} autoComplete="off" />
+<label className="btn btn-outline-primary border-dark  " htmlFor="btn-check-2" >Yes</label>
                   
-                </label>
+{/*            
                 <label>
                   <input
                     type="radio"
@@ -203,7 +355,9 @@ function SignInForm() {
                   />
                   <span className="checkmark bg-dark-blue no-check"> No   </span>
                  
-                </label>
+                </label> */}
+                                  <input type="radio" className="btn-check"  id="btn-check-3" name="becomeMember" value="No"  onChange={handleFormChange}  autoComplete="off" />
+<label className="btn btn-outline-primary border-dark" htmlFor="btn-check-3" >No</label>
               </div>
             </div>
             <div>

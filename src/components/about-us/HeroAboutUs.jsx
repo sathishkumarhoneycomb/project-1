@@ -1,4 +1,5 @@
 import GeneralHero from "../general-components/GeneralHero";
+import AboutUsBanner from '../../assets/images/banners/aboutus-banner.jpg';
 
 function HeroAboutUs() {
   return (
@@ -6,7 +7,7 @@ function HeroAboutUs() {
       <GeneralHero
         path="/about"
         pathName="About"
-        bgPath="https://alpaindia.org/_next/static/media/about_us_banner.95049a88.jpg"
+        bgPath={AboutUsBanner}
       >
         <div className="hero_main">
           <h1 className="fw-bolder  ms-lg-5 text-uppercase fw-bold lh-base page-heading">

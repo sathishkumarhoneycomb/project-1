@@ -17,10 +17,10 @@ function Footer() {
 
   return (
     <>
-      <footer className="section-footer text-white pb-1">
-        <div className={`footer ${row} gap-4 ms-4 pt-5`} >
+      <footer className="section-footer text-white pb-1 pt-5">
+        <div className={`footer`} >
           {/* first div  */}
-          <div className="footer-card col-3 ">
+          <div className="footer-card">
             <img
               src="https://alpaindia.org/_next/static/media/logo.7ddf3dc7.svg"
               alt="alpa logo"
@@ -33,8 +33,8 @@ function Footer() {
           {/* ----------------------------------------- */}
 
           {/* second div  */}
-          <div className="col-2">
-            <h5 className="text-uppercase mb-5"> QUICK LINKS </h5>
+          <div className="footer-card">
+            <h5 className="text-uppercase mb-md-5"> QUICK LINKS </h5>
 
             <ul className="fs-5 list-unstyled ms-4 lh-lg">
               <li> About </li>
@@ -47,8 +47,8 @@ function Footer() {
           {/* ----------------------------------------- */}
 
           {/* third div  */}
-          <div className="footer-card col-2">
-            <h5 className="text-uppercase mb-5"> POLICIES </h5>
+          <div className="footer-card">
+            <h5 className="text-uppercase mb-md-5"> POLICIES </h5>
 
             <ul className="fs-5 list-unstyled ms-4 lh-lg">
               <li> Terms & Conditions</li>
@@ -59,8 +59,8 @@ function Footer() {
           {/* ----------------------------------------- */}
 
           {/* fourth div  */}
-          <div className="footer-card col-2">
-            <h5 className="text-uppercase mb-5">PARTNER LOGIN</h5>
+          <div className="footer-card ">
+            <h5 className="text-uppercase mb-md-5">PARTNER LOGIN</h5>
 
             <ul className="fs-5 list-unstyled ms-4 lh-lg">
               <li> Pilot Login</li>
@@ -72,8 +72,8 @@ function Footer() {
           {/* ----------------------------------------- */}
 
           {/* fifth div  */}
-          <div className="footer-card col-2">
-            <h5 className="text-uppercase mb-5"> EMAIL ADDRESS</h5>
+          <div className="footer-card ">
+            <h5 className="text-uppercase mb-md-5"> EMAIL ADDRESS</h5>
 
             <ul className="fs-5 list-unstyled ms-4 lh-lg ">
               <li>

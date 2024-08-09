@@ -32,22 +32,14 @@
 }
 
 /* about us page */
-.page-heading {
-  font-size: 62px;
-}
+
 
 /* hero section */ 
-.section-hero {
-  background-image: url("https://alpaindia.org/_next/static/media/home-banner.f1d4c7df.jpg") ;
-  background-size: cover;
-  background-position: center;
-  height: 100vh; 
-  position: relative;
-}
+
 
 .hero-main {
   position: absolute;
-  width: 55%;
+  width: 58%;
   top: 60%;
   left: 50%;
   transform: translate(-50% ,-50%);
@@ -194,8 +186,14 @@
 }
 
 .contactUsBody {
-  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 3rem;
+
 }
+
+
+
 
 .filter-brightness {
   filter: brightness(140%);
@@ -209,7 +207,7 @@
 
 
 .enquiry-form-input {
-    width: 680px;
+    width: 60%;
     height: 5rem;
     padding: 24px 10px;
     border-radius: 7px;
@@ -218,7 +216,7 @@
 }
 
 .enquiry-form-textarea {
-    width: 680px;
+    width: 60%;
     height: 8rem;
     padding: 24px 10px;
     border-radius: 7px;
@@ -382,107 +380,26 @@
   margin-bottom: 40px;
 }
 
+.btn-checkbox:hover {
+  background-color: #303f9f !important;
+  color: #fff !important;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1.5fr 1.2fr 1.2fr 1.2fr 1.2fr;
+  gap: 1rem;
+  margin: 01rem;
+}
 
 
- @media only screen and (max-width: 376px) {
+.navbar-collapse.show {
+  background-color: #0C53A6;
+}
 
-  .hero-main {
-    width: 100%;
-    padding-left: 0.5rem;
-  }
-  .hero-description {
-    font-size: 1.15rem;
-    margin: 1rem 2.5rem 1rem 0.8rem;
-  }
-  .logo-img {
-    width: 230px;
-    margin-right: 3rem;
-    
-  }
 
-  .nav-container {
-    display: block;
-  }
-
-  .show {
-    background-color: #0C53A6; 
-  }
-
-  .navbar-collapse {
-    transition:none;
-    width: 100%;
-  }
-
-  .hero_main {
-        width: 82%;
-        left: 32px;
-        top: 40%;
-
-    }
-
-    .page-heading {
-      font-size: 32px;
-    }
-
-    .breadcrumb {
-      left: 2.4rem;
-      top: 7rem;
-    }
-    
-    .accordion-btn {
-      font-size: 0.9rem;
-    }
-
-    .news-cards {
-      margin-bottom: 2rem;
-    }
-
-    .fs-5 {
-      font-size: 1.1rem !important;
-    }
-    
-    table {
-      padding: 1rem 2rem !important;
-      margin-bottom: 3rem;
-    }
-
-    .iframe-img-div {
-      height: 350px;
-      padding-left: 0;
-      padding-right: 2px;
-     }
-    
-     .sectionEnquiryForm  {
-      margin-top: 30rem;
-     }
-
-     .enquiry-form-input {
-      width: 100%;
-     }
-
-     .enquiry-form-textarea {
-      width: 100%;
-     }
-
-     .form-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      row-gap: 1rem; 
-    }
-
-    .radioBtnsDiv {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start !important;
-      margin-top: 3rem;
-
-    }
-
-    .memberCheckbox, .checkmark {
-      position: static;
-    }
-
-    .fileUploadIcon {
-      width: 130px;
-    }
- }
+.newsCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem  ;
+}
