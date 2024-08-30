@@ -1,0 +1,165 @@
+  /* custom colors  */
+
+  .color_light_gray {
+    color: #6F6E6E;
+  }
+
+  .color_dark_blue {
+    color: #0C53A6;
+  }
+
+  .bg_dark_blue {
+    background-color: #0C53A6 !important;
+  }
+
+  .bg_light_blue {
+    background-color: #2464af !important;
+  }
+  
+  .bg_light_gray {
+    background-color: #EFEFEF;
+  }
+
+  .bg_light_shade_blue {
+    background-color: rgba(232, 240, 254, 1)
+  }
+  
+
+  .hover_light_blue:hover {
+    background-color: #5ca0ed;
+  }
+
+  .table.bg_dark_blue {
+    --bs-table-bg : #0C53A6;
+    --bs-table-color: #fff;
+  }
+
+
+  /* custom font sizes  */
+  .section_sub_heading {
+    font-size: 1rem;
+  }
+
+  .banner_sub_heading {
+    font-size: 20px;
+  }
+
+  
+.fs_1_5 {
+  font-size: 1.15rem;
+}
+
+  
+  /* .section_heading {
+    font-size: 2rem;
+  }
+   */
+
+  .banner_heading {
+    font-size: 72px;
+  }
+
+
+  .inner_banner_heading {
+    font-size: 60px;
+  }
+
+  .date_text {
+    font-size:0.9rem;
+  }
+
+  .small_placeholder::placeholder {
+    font-size: 16px !important;
+  }
+
+  /* custom  width  */
+
+  .banner_text_block {
+    width: 60%;
+  }
+
+  .inner_banner_text_block {
+    width: 50%;
+    transform: translate(-70%, -40%);
+  }
+
+  /* miscelleneous styles  */
+  .truncate_four_line {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 2; 
+  
+  }
+  .truncate-single-line {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 2; 
+  
+  }
+
+  .outline_none {
+    outline: none;
+  }
+
+  
+  .scale_5 {
+    transform: scale(1.5); /* Adjust the scale to increase or decrease size */ 
+  }
+
+
+/* custom margins and paddings  */
+  .mb-6 {
+    margin-bottom: 6rem;
+  }
+
+  
+
+
+
+
+
+
+  
+
+
+
+  @media only screen and (max-width: 768px) {
+    body {
+      overflow-x: hidden;
+    }
+    /* [class*="col-"] {
+      width: 100%;
+    } */
+
+
+  }
+
+  @media only screen and (max-width: 376px) {
+    .banner_heading {
+      font-size: 32px;
+      padding-left: 0 !important;
+    }
+
+
+/
+
+    .footer-card h5 {
+      margin-top: 3rem;
+    }
+
+    .call_to_action_form {
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+
+
+ 
+  
+  }

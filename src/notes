@@ -1,0 +1,35 @@
+
+
+  
+
+  
+
+  .fileControl {
+    height: 51px;
+    position: relative
+  }
+
+  
+  
+
+  
+  .fileUploadEL {
+    z-index: -2;
+  }
+  
+  .signInFormLicence :last-child{
+    grid-column: span 2;
+  }
+  
+  .radioBtns label {
+    /* background-color: #0C53A6; */
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+  
+    
+  }
+
+  
+  .checkBoxLabel {
+    font-size: 1.1rem;
+  }

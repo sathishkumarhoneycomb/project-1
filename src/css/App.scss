@@ -1,0 +1,122 @@
+// GRID SYSTEM 
+.public_content_body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.contactpage_contact_us {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 3rem;
+}
+
+.form_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+  column-gap: 1.5rem;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr 1.2fr 1.2fr 1.2fr;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  margin: 1rem 2rem;
+}
+
+// NAVBAR 
+.nav-link:hover {
+  background-color:rgb(63, 62, 62);
+}
+
+.navbar-collapse.show {
+  background-color: #0C53A6;
+}
+.navbar-collapse {
+  transition: none;
+}
+
+.navbar-collapse.show .nav-link.btn {
+  width: max-content;
+  padding: 0.4rem 1rem;
+  margin-bottom: 0.8rem;
+}
+
+// OTHERS 
+.call_to_action {
+  margin: 7rem 0;
+}
+
+
+.breadcrumb-item::before {
+  content: ">";
+  padding: 0 1rem;
+}
+
+
+// ACCORDION
+.accordion_btn {
+  transition: all 0.3s;
+} 
+
+.accordion_btn:hover {
+  background-color: rgb(243 244 246/1) !important;
+  border-bottom: 3px solid #0C53A6 !important;
+}
+
+.accordion_btn.active {
+  border-bottom: 3px solid #0C53A6 !important;
+}
+
+// BACKGROUND 
+.section_footer {
+  background: url('https://alpaindia.org/_next/static/media/footer_background.d55883eb.jpg');
+  background-size: cover;
+}
+
+//  =================================== //
+
+
+
+
+
+
+
+
+/* Admin Login Page  */
+.loginPageMain {
+  margin-top: 8rem;
+}
+
+.blue-gradient {
+  background: linear-gradient(40deg,  #45cafc, #303f9f) !important;
+}
+
+.hover-red:hover {
+  color: red !important;
+}
+
+.green_color {
+  color: #14A048 !important;
+}
+
+.pilot-text:after {
+  content: '';
+  display: block;
+  width: 100%;
+  max-width: 75px;
+  height: 3px;
+  background: #EC8321;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: #d12027;
+  border-top-width: 3px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+
+
+
