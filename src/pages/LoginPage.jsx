@@ -9,50 +9,47 @@ import { useState, useEffect  } from "react";
 function LoginPage() {
 
 
-    const [validEmail, setValidEmail] = useState(false);
-    const [pwdValid, setPwdValid] = useState(false);
+//     const [validEmail, setValidEmail] = useState(false);
+//     const [pwdValid, setPwdValid] = useState(false);
 
-    const [emailFocus, setEmailFocus] = useState(false);
-    const [pwdFocus, setPwdFocus] = useState(false);
+//     const [emailFocus, setEmailFocus] = useState(false);
+//     const [pwdFocus, setPwdFocus] = useState(false);
 
 
-    const [errMsg, setErrMsg] = useState('');
+//     const [errMsg, setErrMsg] = useState('');
 
-    const emailRef = useRef();
+//     const emailRef = useRef();
 
-    const [formData, setFormData] = useState({
-        email: '',
-        password: ''
-      });
+//     const [formData, setFormData] = useState({
+//         email: '',
+//         password: ''
+//       });
     
       
     
-      const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
-      };
+//       const handleChange = (e) => {
+//         const { name, value } = e.target;
+//         setFormData({ ...formData, [name]: value });
+//       };
 
 
-        // whenever user changes email keep watch on it 
-  useEffect( () => {
-    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    const result =  regex.test(formData.email);
-    setValidEmail(result);
-  },[formData.email])
+//   useEffect( () => {
+//     const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+//     const result =  regex.test(formData.email);
+//     setValidEmail(result);
+//   },[formData.email])
 
-  // whenever user changes password keep a watch on it 
-  useEffect( () => {
+//   useEffect( () => {
 
-      const result = formData.password.length > 3
-      setValidPwd(result);
+//       const result = formData.password.length > 3
+//       setValidPwd(result);
 
-  }, [formData.password])
+//   }, [formData.password])
 
 
-  // for error message 
-  useEffect( () => {
-      setErrMsg('');
-  }, [formData.email, formData.password])
+//   useEffect( () => {
+//       setErrMsg('');
+//   }, [formData.email, formData.password])
 
 
     

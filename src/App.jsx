@@ -1,8 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/js/dist/dropdown";
+
+
 import "./css/App.scss";
 import "./css/queries.css";
+
+import "./css/pilot.css";
 
 import HomePage from "./pages/HomePage";
 import AboutUsPage from "./pages/AboutUsPage";
@@ -16,6 +21,8 @@ import LoginPage from "./pages/LoginPage.jsx";
 import TcPage from "./pages/TcPage.jsx";
 import PrivacyPolicyPage  from "./pages/PrivacyPolicyPage.jsx";
 import DisclaimerPolicyPage  from "./pages/DisclaimerPolicyPage.jsx";
+import PilotNavBar from "./components/pilot/homepage/pilotNavBar.jsx";
+import DashBoard from "./components/pilot/Dashboard.jsx";
 
 
 
@@ -25,8 +32,8 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route  element={<ResNavBar />}>
-            <Route path="/" element={<HomePage />} />
+          <Route  path="/"  element={<ResNavBar />}>
+            <Route index element={<HomePage />} />
             <Route path="/about" element={<AboutUsPage />} />
 
             <Route path="/contact" element={<ContactUsPage />} />
@@ -47,6 +54,15 @@ function App() {
             <Route path="/privacy-policy" element={<PrivacyPolicyPage /> } /> 
             <Route path="/disclaimer-policy" element={<DisclaimerPolicyPage /> }/>
           </Route>
+
+          <Route path="/pilot" element={<PilotNavBar />} >
+              <Route path='dashboard' element={<DashBoard />} />
+
+          </Route>
+
+
+
+          
         </Routes>
       </BrowserRouter>
       
