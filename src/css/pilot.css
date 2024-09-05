@@ -49,12 +49,8 @@
     height: 100vh !important;
 }
 
-
-.investment_icon, .amount_paid_icon  {
-    width: 90px;
-    height: 90px;
-
-    border-radius: 7px;
+.height_90 {
+    height: 100% !important
 }
 
 .investment_icon {
@@ -64,3 +60,25 @@
 .amount_paid_icon {
     background-color: lightcoral;
 }
+
+
+
+.pilot_new_cards {
+    height: 400px;
+}
+
+.pilot_dashboard {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.7fr;
+
+    height: 100vh;
+  }
+
+
+/* Pilot Profile Page  */
+
+
+/* Pilot Payment Details Page  */
+
+

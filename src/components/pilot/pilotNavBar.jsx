@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-
+import PilotFooter from './PilotFooter';
 
 
 import { Offcanvas, Nav, Navbar, Button } from 'react-bootstrap';
@@ -18,6 +18,7 @@ import { Outlet } from 'react-router-dom';
   return (
 
     <>
+    <div>
 
     <div className='w-100 overflow-hidden'>
         <Offcanvas show={show} onHide={handleClose} placement="start" className="bg_dark_blue text-white offcanvas" >
@@ -33,28 +34,28 @@ import { Outlet } from 'react-router-dom';
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Nav className="flex-column">
-            <Nav.Link href="/" className="text-white">
+            <Nav.Link href="/pilot/dashboard" className="text-white">
               Dashboard
             </Nav.Link>
-            <Nav.Link href="/" className="text-white">
+            <Nav.Link href="/pilot/profile" className="text-white">
               Profile
             </Nav.Link>
-            <Nav.Link href="/" className="text-white">
+            <Nav.Link href="/pilot/membership" className="text-white">
               Membership
             </Nav.Link>
-            <Nav.Link href="/" className="text-white">
+            <Nav.Link href="/pilot/payment-details" className="text-white">
               Payment Details
             </Nav.Link>
-            <Nav.Link href="/" className="text-white">
+            <Nav.Link href="/pilot" className="text-white">
               News & Events
             </Nav.Link>
-            <Nav.Link href="/" className="text-white">
+            <Nav.Link href="/pilot" className="text-white">
               Discussion Forum
             </Nav.Link>
-            <Nav.Link href="/" className="text-white">
+            <Nav.Link href="/pilot" className="text-white">
               Download Forms
             </Nav.Link>
-            <Nav.Link href="/" className="text-white">
+            <Nav.Link href="/pilot" className="text-white">
               Closure Forms
             </Nav.Link>
           </Nav>
@@ -93,25 +94,25 @@ import { Outlet } from 'react-router-dom';
             <Nav.Link href="/pilot/dashboard" className="text-white mb-2 ">
               Dashboard
             </Nav.Link>
-            <Nav.Link href="/" className="text-white mb-2">
+            <Nav.Link href="/pilot/profile" className="text-white mb-2">
               Profile
             </Nav.Link>
-            <Nav.Link href="/" className="text-white mb-2">
+            <Nav.Link href="/pilot/membership" className="text-white mb-2">
               Membership
             </Nav.Link>
-            <Nav.Link href="/" className="text-white mb-2">
+            <Nav.Link href="/pilot/payment-details" className="text-white mb-2">
               Payment Details
             </Nav.Link>
-            <Nav.Link href="/" className="text-white mb-2">
+            <Nav.Link href="/pilot" className="text-white mb-2">
               News & Events
             </Nav.Link>
-            <Nav.Link href="/" className="text-white mb-2">
+            <Nav.Link href="/pilot" className="text-white mb-2">
               Discussion Forum
             </Nav.Link>
-            <Nav.Link href="/" className="text-white mb-2">
+            <Nav.Link href="/pilot" className="text-white mb-2">
               Download Forms
             </Nav.Link>
-            <Nav.Link href="/" className="text-white">
+            <Nav.Link href="/pilot" className="text-white">
               Closure Forms
             </Nav.Link>
           </Nav>
@@ -125,25 +126,38 @@ import { Outlet } from 'react-router-dom';
         </div>
 
         {/* Main Content Area */}
-        <div className="flex-fill bg-light p-4 side_100 " >
+        <div className="flex-fill bg-light p-4 side_100    " >
           <nav className='d-flex justify-content-end'>
             Welcome, Test user
           </nav>
           <hr />
-          <div className="row ">
-            <div className="col overflow-scroll side_100">
-
-
-                  {/* main content of the webpage  */}
+          <div className="row height_90 overflow-y-scroll ">
+            
+            <div className="col">
+                {/* main content of the webpage  */}
                 <Outlet />
-
-
-
-
             </div>
+
+          
+
+
+          
+
+          <div>
+      
+            </div>
+            <PilotFooter />
+
+           
           </div>
+
+          
+
+
         </div>
       </div>
+      </div>
+
       </div>
 
     </>

@@ -531,20 +531,20 @@ const closeModal = () => {
                 <option value="" disabled selected>
                   Name of Airline
                 </option>
-                                                                            <option value="Jet Airways" >Jet Airways</option>
-                                                                            <option value="Air India">Air India</option>
-                                                                            <option value="Indigo">Indigo</option>
-                                                                            <option value="Spice Jet">Spice Jet</option>
-                                                                            <option value="Air India Express">Air India Express</option>
-                                                                            <option value="Go Air" >Go Air</option>
-                                                                            <option value="Air Asia India" >Air Asia India</option>
-                                                                            <option value="Vistara" >Vistara</option>
-                                                                            <option value="Alliance">Alliance</option>
-                                                                            <option value="True Jet" >True Jet</option>
-                                                                            <option value="Blue Dart">Blue Dart</option>
-                                                                            <option value="Jetlite">Jetlite</option>
-                                                                            <option value="General Aviation">General Aviation</option>
-                                                                            <option value="Others">Others</option>
+                <option value="Jet Airways" >Jet Airways</option>
+                        <option value="Air India">Air India</option>
+                             <option value="Indigo">Indigo</option>
+                       <option value="Spice Jet">Spice Jet</option>
+                            <option value="Air India Express">Air India Express</option>
+                                                            <option value="Go Air" >Go Air</option>
+                                          <option value="Air Asia India" >Air Asia India</option>
+                                                         <option value="Vistara" >Vistara</option>
+                                             <option value="Alliance">Alliance</option>
+                                                              <option value="True Jet" >True Jet</option>
+                                                        <option value="Blue Dart">Blue Dart</option>
+                                                     <option value="Jetlite">Jetlite</option>
+                                             <option value="General Aviation">General Aviation</option>
+                                                       <option value="Others">Others</option>
 
               </select>
               <input type="text" id="base" name="base" 
@@ -579,17 +579,15 @@ const closeModal = () => {
                          value={formData.aircraft}
                          onChange={handleInputChange}
               required>
-                <option value="" disabled selected>
-                  Select aircraft type
-                </option>
-                <option value="Airbus A320" >Airbus A320</option>
-                                                                            <option value="Boeing 737">Boeing 737</option>
-                                                                            <option value="Airbus 330">Airbus 330</option>
-                                                                            <option value="Boeing 777" >Boeing 777</option>
-                                                                            <option value="Boeing 787" >Boeing 787</option>
-                                                                            <option value="ATR 72">ATR 72</option>
-                                                                            <option value="Bombardier">Bombardier</option>
-                                                                            <option value="Others" >Others</option>
+                    <option value="" disabled selected> Select aircraft type </option>
+                    <option value="Airbus A320" >Airbus A320</option>
+                    <option value="Boeing 737">Boeing 737</option>
+                    <option value="Airbus 330">Airbus 330</option>
+                    <option value="Boeing 777" >Boeing 777</option>
+                    <option value="Boeing 787" >Boeing 787</option>
+                    <option value="ATR 72">ATR 72</option>
+                    <option value="Bombardier">Bombardier</option>
+                    <option value="Others" >Others</option>
               </select>
 
 

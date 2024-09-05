@@ -17,12 +17,15 @@
   }
   
   .bg_light_gray {
-    background-color: #EFEFEF;
+    background-color: #EFEFEF !important;
   }
+
 
   .bg_light_shade_blue {
     background-color: rgba(232, 240, 254, 1)
   }
+
+  
   
 
   .hover_light_blue:hover {
@@ -117,15 +120,6 @@
   .mb-6 {
     margin-bottom: 6rem;
   }
-
-  
-
-
-
-
-
-
-  
 
 
 

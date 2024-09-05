@@ -6,9 +6,9 @@ import "bootstrap/js/dist/dropdown";
 
 import "./css/App.scss";
 import "./css/queries.css";
-
 import "./css/pilot.css";
 
+// Website Pages 
 import HomePage from "./pages/HomePage";
 import AboutUsPage from "./pages/AboutUsPage";
 import ContactUsPage from "./pages/ContactUsPage";
@@ -21,10 +21,13 @@ import LoginPage from "./pages/LoginPage.jsx";
 import TcPage from "./pages/TcPage.jsx";
 import PrivacyPolicyPage  from "./pages/PrivacyPolicyPage.jsx";
 import DisclaimerPolicyPage  from "./pages/DisclaimerPolicyPage.jsx";
-import PilotNavBar from "./components/pilot/homepage/pilotNavBar.jsx";
+
+// Pilot Pages 
+import PilotNavBar from "./components/pilot/pilotNavBar.jsx";
 import DashBoard from "./components/pilot/Dashboard.jsx";
-
-
+import ProfilePage from "./components/pilot/ProfilePage.jsx";
+import Membership from "./components/pilot/Membership.jsx";
+import PaymentDetails from "./components/pilot/PaymentDetails.jsx";
 
 function App() {
   return (
@@ -57,6 +60,9 @@ function App() {
 
           <Route path="/pilot" element={<PilotNavBar />} >
               <Route path='dashboard' element={<DashBoard />} />
+              <Route path="profile" element={<ProfilePage />} />
+              <Route path="membership" element={<Membership />} />
+              <Route path="payment-details" element={<PaymentDetails />} />
 
           </Route>
 
