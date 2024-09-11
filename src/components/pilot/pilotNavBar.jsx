@@ -46,16 +46,16 @@ import { Outlet } from 'react-router-dom';
             <Nav.Link href="/pilot/payment-details" className="text-white">
               Payment Details
             </Nav.Link>
-            <Nav.Link href="/pilot" className="text-white">
+            <Nav.Link href="/pilot/news-events" className="text-white">
               News & Events
             </Nav.Link>
-            <Nav.Link href="/pilot" className="text-white">
+            <Nav.Link href="/pilot/discussion-forum" className="text-white">
               Discussion Forum
             </Nav.Link>
-            <Nav.Link href="/pilot" className="text-white">
+            <Nav.Link href="/pilot/download-forms" className="text-white">
               Download Forms
             </Nav.Link>
-            <Nav.Link href="/pilot" className="text-white">
+            <Nav.Link href="/pilot/claim-form" className="text-white">
               Closure Forms
             </Nav.Link>
           </Nav>
@@ -91,30 +91,39 @@ import { Outlet } from 'react-router-dom';
           </Navbar.Brand>
           <hr />
           <Nav className="flex-column">
+            
             <Nav.Link href="/pilot/dashboard" className="text-white mb-2 ">
               Dashboard
             </Nav.Link>
+            
             <Nav.Link href="/pilot/profile" className="text-white mb-2">
               Profile
             </Nav.Link>
+            
             <Nav.Link href="/pilot/membership" className="text-white mb-2">
               Membership
             </Nav.Link>
+            
             <Nav.Link href="/pilot/payment-details" className="text-white mb-2">
               Payment Details
             </Nav.Link>
-            <Nav.Link href="/pilot" className="text-white mb-2">
+
+            <Nav.Link href="/pilot/news-events" className="text-white mb-2">
               News & Events
             </Nav.Link>
-            <Nav.Link href="/pilot" className="text-white mb-2">
+
+            <Nav.Link href="/pilot/discussion-forum" className="text-white mb-2">
               Discussion Forum
             </Nav.Link>
-            <Nav.Link href="/pilot" className="text-white mb-2">
+
+            <Nav.Link href="/pilot/download-forms" className="text-white mb-2">
               Download Forms
             </Nav.Link>
-            <Nav.Link href="/pilot" className="text-white">
+
+            <Nav.Link href="/pilot/claim-form" className="text-white">
               Closure Forms
             </Nav.Link>
+
           </Nav>
           </div>
           <hr />
@@ -146,7 +155,8 @@ import { Outlet } from 'react-router-dom';
           <div>
       
             </div>
-            <PilotFooter />
+
+            {/* <PilotFooter /> */}
 
            
           </div>

@@ -28,6 +28,12 @@ import DashBoard from "./components/pilot/Dashboard.jsx";
 import ProfilePage from "./components/pilot/ProfilePage.jsx";
 import Membership from "./components/pilot/Membership.jsx";
 import PaymentDetails from "./components/pilot/PaymentDetails.jsx";
+import NewsEvents from "./components/pilot/NewsEvents.jsx";
+import DiscussionForum from "./components/pilot/DiscussionForum.jsx";
+import DownloadForms from "./components/pilot/DownloadForms.jsx";
+import ClaimForm from "./components/pilot/ClaimForm.jsx";
+
+
 
 function App() {
   return (
@@ -63,7 +69,10 @@ function App() {
               <Route path="profile" element={<ProfilePage />} />
               <Route path="membership" element={<Membership />} />
               <Route path="payment-details" element={<PaymentDetails />} />
-
+              <Route path="news-events" element={<NewsEvents />} />
+              <Route path="discussion-forum" element={<DiscussionForum />} /> 
+              <Route path="download-forms" element={<DownloadForms />} />
+              <Route path="claim-form" element={<ClaimForm />} />
           </Route>
 
 

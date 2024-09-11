@@ -32,8 +32,6 @@ const AnnualPaymentDetails = () => {
                                         <td className="bg_light_gray"> Online  </td>
                                         <td className="bg_light_gray"> Success </td>
                                         <td className="bg_light_gray"> 520232350 </td>
-                                        
-
                                     </tr>
                                 </tbody>
                             </table>

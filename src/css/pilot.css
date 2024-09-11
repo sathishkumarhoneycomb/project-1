@@ -79,6 +79,117 @@
 /* Pilot Profile Page  */
 
 
+
+/* Pilot Memebership Page */
+
+.ls_1 {
+    font-style: monospace;
+    letter-spacing: px;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {display:none;}
+  
+  /* The slider */
+  .slider, .sliderBf {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before, .sliderBf:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 26px;
+    left: 0px;
+    bottom: -2px;
+    background-color: rgb(126, 119, 119);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+
+  input.primary:checked + .slider {
+    background-color: #d0ebff;
+  }
+ 
+  input.primary:checked + .sliderBf {
+    background-color: #ccc;
+  }
+ 
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #a5d8ff;
+  }
+
+  input:focus + .sliderBf {
+    box-shadow: 0 0 1px #5a6166;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(38px);
+    background-color: #1864ab;
+
+  }
+
+  input:checked + .sliderBf:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(38px);
+    background-color: #1864ab;
+
+  }
+  
+  /* Rounded sliders */
+  .slider.round , .sliderBf.round  {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before , .sliderBf.round:before  {
+    border-radius: 50%;
+  }
+
+
+  
+
+
+
+
+
 /* Pilot Payment Details Page  */
+
+
+/* Discussion Form  */
+.pilot_discussion_form_table tr,td, th {
+    border: 1px solid black;
+}
+
+
+.dicussionFormBtn {
+    width: 80px;
+    text-align: center;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid blue;
+    text-decoration: none;
+}
+
 
 
