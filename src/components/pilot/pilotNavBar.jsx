@@ -1,15 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 import PilotFooter from './PilotFooter';
+
+import userLogo from "../../../public/assets/images/images.jpeg";
+
 
 
 import { Offcanvas, Nav, Navbar, Button } from 'react-bootstrap';
 import { Outlet } from 'react-router-dom';
 
 
+// font awesome icons 
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser,faGear,faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
+
+
 
 
  function PilotNavBar() {
+  // user profile img ref 
+  const userProfileRef = useRef(null)
+
 
   const [show, setShow] = useState(false);
 
@@ -135,31 +147,54 @@ import { Outlet } from 'react-router-dom';
         </div>
 
         {/* Main Content Area */}
-        <div className="flex-fill bg-light p-4 side_100    " >
-          <nav className='d-flex justify-content-end'>
-            Welcome, Test user
+        <div className="flex-fill bg-light  side_100 overflow-y-scroll overflow-x-hidden" >
+        
+        <div className='ps-2'>
+          <nav className='d-flex justify-content-end align-items-center  text-white px-3 py-1 border border-start-0 border-bottom-1 border-success  mb-4'>
+          <img src={userLogo} alt='user logo' className='img-fluid user_profile rounded-circle user_profile_dropdown' 
+            onClick={(e) => {
+              userProfileRef.current.classList.toggle('show');
+              console.log(userProfileRef)
+            }}
+          />
           </nav>
-          <hr />
-          <div className="row height_90 overflow-y-scroll ">
+          </div>
+
+
+          {/* collapsible  */}
+
+          <div 
+          ref={userProfileRef}
+          className=' user_card bg_dark_blue text-white  d-flex flex-column  rounded-4 py-4 ms-5 px-3  ' >
+            <div className='d-flex flex-column align-items-center '>
+              <img src={userLogo} alt='user logo pic img-fluid' className='user_profile rounded-circle border  border-2 border-light d-block ' />
+              <p className='fw-semibold mt-3 fs-5'> Hello, Test user </p>
+              </div>
+              <hr className='m-0 mb-2'/>
+              
+              <ul className='list-unstyled d-flex flex-column gap-3 mb-0'>
+                <li className=' d-flex gap-3 align-items-center'> <FontAwesomeIcon icon={faUser}  />  Profile </li>
+                <li className=' d-flex gap-3 align-items-center'> <FontAwesomeIcon icon={faGear} /> Update </li>
+                <hr  className='m-0'/>
+                <li className=' d-flex gap-3 align-items-center'> <FontAwesomeIcon icon={faRightFromBracket} />  Logout </li>
+              </ul>
+          </div>
+        
+          
+          <div className="row height_90 overflow-y-scroll  px-5 pb-5">
             
             <div className="col">
                 {/* main content of the webpage  */}
                 <Outlet />
             </div>
 
-          
+        
 
-
-          
-
-          <div>
-      
-            </div>
-
-            {/* <PilotFooter /> */}
+           
 
            
           </div>
+          <PilotFooter />
 
           
 

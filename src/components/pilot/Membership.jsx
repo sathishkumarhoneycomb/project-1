@@ -17,6 +17,18 @@ const customStyles = {
   },
 };
 
+const customGmcModalStyle = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    padding: "2rem",
+  },
+};
+
 Modal.setAppElement('#root');
 
 
@@ -87,7 +99,11 @@ const Membership = () => {
       }
     });
 
+    const [gmcMemberStatus, setGmcMemberStatus] = useState(false);
+
     const [formValue , setFormValue] = useState({...initialInnerFormData, "medicalAssessment" : "" })
+
+    const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
     // self Declaration modal
     const [modalIsOpen, setIsOpen] = useState(false);
@@ -100,6 +116,9 @@ const Membership = () => {
     }
   
     function closeModal() {
+      if(!isFormSubmitted){
+        setBfMemberState(false)
+      }
       setIsOpen(false);
     }
 
@@ -117,9 +136,33 @@ const Membership = () => {
 
     const handleGMC = function(e) {
       if(e.target.checked) {
-        setGmcModalIsOpen(true);
-      } 
+          let userChoice  = window.confirm("Are you sure want to active the GMC?");
+          if(userChoice) {
+              setGmcMemberStatus(true)
+          } else {
+            setGmcMemberStatus(false)
+          }
+      } else {
+        let userChoice  = window.confirm('Are you sure want to de-activate the GMC?')
+        if(userChoice) {
+          setGmcMemberStatus(false)
+        } else {
+          setGmcMemberStatus(true)
+        }
+      }
+      // give a request to the server based on the user choice 
   }
+
+
+  const closeGmcModal = function() {
+    setGmcModalIsOpen(false);
+  }
+
+  const openGmcModal = function() {
+    setGmcModalIsOpen(true);
+  }
+
+
 
   // this method works only for normal object not for nested objects: for nested object kindly look at SigninForm.jsx
   const convertObjToFormData = (obj) => {
@@ -152,14 +195,12 @@ const Membership = () => {
     // if server is good :
 
       //  close the modal window and display a success window 
-
+      setIsFormSubmitted(true)
+      closeModal()
 
     // if server response is bad :
 
       // close the modal window and display a rejection window 
-
-
-
 
   }
 
@@ -198,7 +239,9 @@ const Membership = () => {
                   <li>Inactive</li>
                   <li className="list-group-item">
                     <label className="switch">
-                      <input type="checkbox" className="primary" defaultChecked />
+                      <input type="checkbox" 
+                      className="primary" 
+                      checked />
                       <span className="slider round"></span>
                     </label>
                   </li>
@@ -243,7 +286,8 @@ const Membership = () => {
                   <li>Inactive</li>
                   <li className="list-group-item">
                     <label className="switch">
-                      <input type="checkbox" className="primary" 
+                      <input type="checkbox" className="primary"
+                      checked={gmcMemberStatus} 
                       onChange={handleGMC} />
                       <span className="slider round"></span>
                     </label>
@@ -299,7 +343,7 @@ const Membership = () => {
                             value="yes" 
                             className="scale_5 "
                             onChange={handleFormValueChange}
-                            required
+                            
                              /> <span className="fw-semibold pb-1"> Yes </span>
                             </label>
 
@@ -310,7 +354,7 @@ const Membership = () => {
                             className="scale_5"
                             checked={formValue[title] == "no"} 
                             onChange={handleFormValueChange}
-                            required
+                            
                              /> <span className="fw-semibold pb-1"> No </span>
                             </label>
                             </div>
@@ -331,7 +375,7 @@ const Membership = () => {
                       onChange={(e) => {
                         setFormValue(prev => ({...prev, [e.target.name] : e.target.files[0]}))
                       }}
-                      required
+                      
                     />
                     <span className="text-muted"> Maximum File Size: 3MB</span>
                   </div>
@@ -345,6 +389,24 @@ const Membership = () => {
                 </div>
 
                   
+        </form>
+      </Modal>
+
+      {/* GMC Modal  */}
+      <Modal
+        isOpen={gmModalIsOpen}
+        onRequestClose={closeGmcModal}
+        style={customGmcModalStyle}
+        contentLabel="GMC modal "
+      >
+        <button onClick={closeGmcModal}>close</button>
+        <div>I am a modal</div>
+        <form>
+          <input />
+          <button>tab navigation</button>
+          <button>stays</button>
+          <button>inside</button>
+          <button>the modal</button>
         </form>
       </Modal>
 

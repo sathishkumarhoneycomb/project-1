@@ -94,8 +94,19 @@
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 2; 
-  
   }
+
+
+
+  .truncate_three_line {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5; 
+  }
+
   .truncate-single-line {
     display: -webkit-box;
     -webkit-box-orient: vertical;
