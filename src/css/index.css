@@ -25,6 +25,10 @@
     background-color: rgba(232, 240, 254, 1)
   }
 
+  .table_primary_color {
+    background-color: #cfe2ff;
+  }
+
   
   
 
@@ -125,6 +129,15 @@
   .scale_5 {
     transform: scale(1.5); /* Adjust the scale to increase or decrease size */ 
   }
+
+  .ls_1 {
+    font-style: monospace;
+    letter-spacing: 1.9px;
+}
+
+.width_max_content {
+  width: max-content;
+}
 
 
 /* custom margins and paddings  */

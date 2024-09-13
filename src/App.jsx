@@ -32,6 +32,7 @@ import NewsEvents from "./components/pilot/NewsEvents.jsx";
 import DiscussionForum from "./components/pilot/DiscussionForum.jsx";
 import DownloadForms from "./components/pilot/DownloadForms.jsx";
 import ClaimForm from "./components/pilot/ClaimForm.jsx";
+import AddNominee from "./components/pilot/payment-details/AddNominee.jsx";
 
 
 
@@ -73,6 +74,9 @@ function App() {
               <Route path="discussion-forum" element={<DiscussionForum />} /> 
               <Route path="download-forms" element={<DownloadForms />} />
               <Route path="claim-form" element={<ClaimForm />} />
+
+              {/* Internal Pages routes */}
+              <Route path="nominee/add" element={<AddNominee />} />
           </Route>
 
 

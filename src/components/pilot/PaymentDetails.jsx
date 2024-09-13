@@ -1,8 +1,14 @@
+
+import Datetime from "react-datetime";
+
+
+
 import AnnualPaymentDetails from "./payment-details/AnnualPaymentDetails";
 import FacilitationPaymentDetails from "./payment-details/FacilitationPaymentDetails";
 import BFMemberPaymentDetails from "./payment-details/BFMemberPaymentDetails";
 import CollectivePaymentDetails from "./payment-details/CollectivePaymentDetails";
 import GMCPaymentDetails from "./payment-details/GMCPaymentDetails";
+import YearPicker from "./YearPicker";
 
 
 
@@ -13,6 +19,10 @@ const PaymentDetails = () => {
             <section className="mb-5">
 
                     <header className="mb-5">
+
+                    <div>
+                        <YearPicker />
+                    </div>
 
                     <div className="card py-3">
                         <h4 className="text-uppercase text-success text-center"> Payment Status </h4>

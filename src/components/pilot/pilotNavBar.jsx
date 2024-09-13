@@ -150,8 +150,8 @@ import { faUser,faGear,faRightFromBracket } from "@fortawesome/free-solid-svg-ic
         <div className="flex-fill bg-light  side_100 overflow-y-scroll overflow-x-hidden" >
         
         <div className='ps-2'>
-          <nav className='d-flex justify-content-end align-items-center  text-white px-3 py-1 border border-start-0 border-bottom-1 border-success  mb-4'>
-          <img src={userLogo} alt='user logo' className='img-fluid user_profile rounded-circle user_profile_dropdown' 
+          <nav className='d-flex justify-content-end align-items-center  text-white px-3 py-1 border border-start-0 border-end-0 border-bottom-1 border-success  mb-4'>
+          <img src={userLogo} alt='user logo' className='img-fluid user_profile rounded-circle user_profile_dropdown border border-1 ' 
             onClick={(e) => {
               userProfileRef.current.classList.toggle('show');
               console.log(userProfileRef)

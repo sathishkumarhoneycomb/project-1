@@ -181,17 +181,14 @@ function ProfilePage() {
 
                             {/*single col -  GMC  */}
 
-                            <div className="form-group  d-flex justify-content-lg-start gap-lg-5  mb-5">
+                            <div className="form-group d-block d-md-flex gap-5 mb-5">
                                 <label className="fw-semibold"> Do you want to become ALPA Group Medical Coverage(ALPA GMC)? </label>
-                            <div class="form-check form-switch">
-    <label class="form-check-label" for="mySwitch">
-        <span class="label-left fw-semibold">No</span>
-        <input class="form-check-input border-5 p-2" type="checkbox" id="mySwitch" name="gender" value="yes" />
-        <span class="label-right">Yes</span>
-    </label>
-</div>
-                                {/* <input type="radio"  className="form-control" name="gmc" value="no" /> No  */}
-                            
+                                <div className=" d-flex mt-3 mt-md-0 gap-5">
+                                <label>
+                                <input type="radio"  className="scale_5" name="gmc" value="no" /> No  </label>
+                                <label>
+                                <input type="radio"  className="scale_5" name="gmc" value="yes" /> Yes </label>
+                                </div>
                             </div>
 
                             {/* double col */}

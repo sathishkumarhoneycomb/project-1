@@ -1,12 +1,25 @@
+import { useState } from "react";
+import GMCPaymentModalWindow from "./GMCPaymentModalWindow";
+
+
+
 
 const GMCPaymentDetails = () => {
+    
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
        <>
                                 <div className="card">
 
 <div className="card-header text-uppercase d-block d-md-flex justify-content-between  align-items-center">
     <h6 className="text-success m-0 lh-lg"> GMC Payment Details </h6>
-    <button className="btn btn-outline-primary rounded-0 text-uppercase m-md-0 mt-3"> Add Payment </button>
+    <button className="btn btn-outline-primary rounded-0 text-uppercase m-md-0 mt-3" 
+    onClick={handleShow}
+    > Add Payment </button>
 </div>
 
 <div className="card-body">
@@ -41,6 +54,7 @@ const GMCPaymentDetails = () => {
 </div>
 
 </div>
+    <GMCPaymentModalWindow show={show} handleClose={handleClose} />
        </>
     );
 }

@@ -1,11 +1,24 @@
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import AnnualPaymentModalWindow from './AnnualPaymentModalWindow';
+
+
+
 
 const AnnualPaymentDetails = () => {
+    
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true); 
+
     return (
-        <div className="card">
+        <>
+        <div className="card ">
 
                         <div className="card-header  text-uppercase d-block d-md-flex justify-content-between  align-items-center">
                             <h6 className="text-success m-0 lh-lg"> Annual Payment Details (ordinary membership) <span className="text-danger"> (due on 31-12-2027)  </span> </h6>
-                            <button className="btn btn-outline-primary rounded-0 text-uppercase m-md-0 mt-3"> Add Payment </button>
+                            <button className="btn btn-outline-primary rounded-0 text-uppercase m-md-0 mt-3" onClick={handleShow}> Add Payment </button>
                         </div>
 
                         <div className="card-body">
@@ -38,6 +51,9 @@ const AnnualPaymentDetails = () => {
                         </div>
 
                         </div>
+
+                        <AnnualPaymentModalWindow show={show} handleClose={handleClose}/>
+                        </>
     );
 }
 

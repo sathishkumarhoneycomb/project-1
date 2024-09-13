@@ -138,7 +138,17 @@ const Membership = () => {
       if(e.target.checked) {
           let userChoice  = window.confirm("Are you sure want to active the GMC?");
           if(userChoice) {
-              setGmcMemberStatus(true)
+              setGmcMemberStatus(true);
+              
+              // make a call to the server and update the gmc status 
+
+              // if server response is good:
+                  // display a confirmation modal to the user 
+                  setTimeout(() => {
+                    setGmcModalIsOpen(true)
+                  }, 700)
+
+
           } else {
             setGmcMemberStatus(false)
           }
@@ -146,11 +156,16 @@ const Membership = () => {
         let userChoice  = window.confirm('Are you sure want to de-activate the GMC?')
         if(userChoice) {
           setGmcMemberStatus(false)
+          // make a call to the server and update the gmc status 
+
+          //  if server response is good:
+              // display a confirmation modal to the user 
+              setGmcModalIsOpen(true);
+
         } else {
           setGmcMemberStatus(true)
         }
       }
-      // give a request to the server based on the user choice 
   }
 
 
@@ -397,17 +412,27 @@ const Membership = () => {
         isOpen={gmModalIsOpen}
         onRequestClose={closeGmcModal}
         style={customGmcModalStyle}
-        contentLabel="GMC modal "
+        contentLabel="GMC confirmation modal  "
       >
-        <button onClick={closeGmcModal}>close</button>
-        <div>I am a modal</div>
-        <form>
-          <input />
-          <button>tab navigation</button>
-          <button>stays</button>
-          <button>inside</button>
-          <button>the modal</button>
-        </form>
+        <div className="d-flex flex-column  align-items-center gap-3 ">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+        className=" color_green  rounded-circle"
+        height="80px" 
+        viewBox="0 -960 960 960" 
+        width="80px" 
+        fill="#8ce99a"><path d="M379.33-244 154-469.33 201.67-517l177.66 177.67 378.34-378.34L805.33-670l-426 426Z"/>
+        </svg>
+
+        <div className="d-flex flex-column gap-0 align-items-center ">
+        <h3> Thank you  </h3>
+        <p> Your GMC status has been updated successfully! </p>
+        </div>
+        <button className="btn btn-outline-success py-2 px-4" onClick={() => {
+          setGmcModalIsOpen(false)
+        }}> OK </button>
+
+        </div>
+        
       </Modal>
 
 

@@ -1,6 +1,20 @@
 
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+
+import BFPaymentModalWindow from './BFPaymentModalWindow.jsx';
+
+
 const BFMemberPaymentDetails = () => {
+    const navigate = useNavigate();
+
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
     return (
+        <>
         <div>
 
 <div className="card">
@@ -8,12 +22,18 @@ const BFMemberPaymentDetails = () => {
                         <div className="card-header text-uppercase d-block d-md-flex justify-content-between  align-items-center">
                             <h6 className="text-success m-0 lh-lg"> Payment Details (Benevolent Fund Membership) <span className="text-danger"> (due on 05-09-2024)  </span> </h6>
                             <div className="d-flex gap-3">
-                            <button className="btn btn-outline-primary rounded-0 text-uppercase m-md-0 mt-3"> Add Payment </button>
-                            <button className="btn btn-outline-primary rounded-0 text-uppercase m-md-0 mt-3"> Add Nominee </button>
+                            <button className="btn btn-outline-primary rounded-0 text-uppercase m-md-0 mt-3" 
+                            onClick={() => {
+                                handleShow();
+                            }}
+                            > Add Payment </button>
+                            <button className="btn btn-outline-primary rounded-0 text-uppercase m-md-0 mt-3" onClick={() => {
+                                return navigate('/pilot/nominee/add')
+                            }} > Add Nominee </button>
                             </div>
                         </div>
 
-                        <div className="card-body">
+                        <div className="card-body table-responsive">
                             <table className="table table-stripped">
                                 <thead>
                                     <tr >
@@ -45,8 +65,10 @@ const BFMemberPaymentDetails = () => {
                         </div>
 
                         </div>
-            
+                            
         </div>
+        <BFPaymentModalWindow show={show} handleClose={handleClose}/>
+        </>
     );
 }
 
