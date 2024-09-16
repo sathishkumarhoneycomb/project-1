@@ -172,9 +172,13 @@
     border: 1px solid black;
 }
 
-/* .nominee_table table, th,td {
-  border: 1px solid #535e6d;
-} */
+.nominee_table tr {
+  /* border: 0.0001px solid #919293;
+   */
+   
+}
+
+
 
 .dicussionFormBtn {
     width: 80px;
