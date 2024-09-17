@@ -8,17 +8,19 @@ import userLogo from "../../../public/assets/images/images.jpeg";
 
 import { Offcanvas, Nav, Navbar, Button } from 'react-bootstrap';
 import { Outlet, useLocation } from 'react-router-dom';
+import { Popover, OverlayTrigger, Card, Image } from 'react-bootstrap';
 
 
 // font awesome icons 
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser,faGear,faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
+import UserProfileCard from './UserProfileCard';
 
 
 
 
- function PilotNavBar() {
+ const PilotNavBar = () => {
   // user profile img ref 
   const userProfileRef = useRef(null);
 
@@ -27,16 +29,49 @@ import { faUser,faGear,faRightFromBracket } from "@fortawesome/free-solid-svg-ic
   const currentPath = location.pathname;
   console.log(currentPath);
 
+  // for mobile device navbar toggle  
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  // for user profile modal show 
+
+  const popover = (
+    <Popover id="popover-basic">
+      <Popover.Body className='d-flex justify-content-center flex-column '>
+        <img src={userLogo} className='border border-1 mb-3 user_profile_card_img '/>
+        <p className='fs-5  fw-semibold'> John Smith M  </p>
+        <div className='mb-2'>
+        <div className='d-flex gap-3'>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#777"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+          <p>  test@gmail.com </p>
+          </div>
+          <div className='d-flex gap-3'>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#777"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+          <p>  8123456789 </p>
+          </div>
+          <div className='d-flex gap-3'>
+          <svg xmlns="http://www.w3.org/2000/svg" 
+          height="24px" viewBox="0 -960 960 960" width="24px" fill="#777"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg> 
+          <p> Bangalore </p>
+          </div>
+          
+
+        </div>
+        <button className='btn btn-outline-primary py-1 rounded-0  mb-2'> Full Profile </button>
+
+          <button className='btn btn-outline-primary py-1 rounded-0 mb-2'>Logout </button>
+    
+
+
+      </Popover.Body>
+    </Popover>
+  );
   
 
 
 
 
-
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
   return (
 
     <>
@@ -97,9 +132,13 @@ import { faUser,faGear,faRightFromBracket } from "@fortawesome/free-solid-svg-ic
             </Nav.Link>
             <Nav.Link href="/pilot/claim-form" className={`text-white d-flex align-items-center gap-3 ${currentPath == "/pilot/claim-form"  ? "active" : "" }`}>
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M260-160q-91 0-155.5-63T40-377q0-78 47-139t123-78q25-92 100-149t170-57q117 0 198.5 81.5T760-520q69 8 114.5 59.5T920-340q0 75-52.5 127.5T740-160H520q-33 0-56.5-23.5T440-240v-206l-64 62-56-56 160-160 160 160-56 56-64-62v206h220q42 0 71-29t29-71q0-42-29-71t-71-29h-60v-80q0-83-58.5-141.5T480-720q-83 0-141.5 58.5T280-520h-20q-58 0-99 41t-41 99q0 58 41 99t99 41h100v80H260Zm220-280Z"/></svg>
-
               Closure Forms
             </Nav.Link>
+
+            <Nav.Link href="/pilot/logout" className={`text-white d-flex align-items-center gap-3 ${currentPath == "/pilot/claim-form"  ? "active" : "" }`}>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z"/></svg>              Logout 
+            </Nav.Link>
+            
           </Nav>
           
           <div className="d-flex flex-column  ">
@@ -118,6 +157,7 @@ import { faUser,faGear,faRightFromBracket } from "@fortawesome/free-solid-svg-ic
           <Button variant="light" onClick={handleShow} className='border border-2'>
           <svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
           </Button>
+          
         </div>
 
         {/* Sidebar for Desktop */}
@@ -199,15 +239,20 @@ import { faUser,faGear,faRightFromBracket } from "@fortawesome/free-solid-svg-ic
         <div className="flex-fill bg-light  side_100 overflow-y-scroll overflow-x-hidden" >
         
         <div className='ps-2'>
-          <nav className='d-none d-md-flex justify-content-end align-items-center  text-white px-3 py-1 border border-start-0 border-end-0 border-bottom-1 border-success  mb-4'>
-          <img src={userLogo} alt='user logo' className='img-fluid user_profile rounded-circle user_profile_dropdown border border-1 ' 
-            onClick={(e) => {
-              userProfileRef.current.classList.toggle('show');
-              console.log(userProfileRef)
-            }}
-          />
+          <nav className='d-none d-md-flex gap-3 justify-content-end align-items-center  text-white px-3 py-1 border border-start-0 border-end-0 border-bottom-1 border-success  mb-4'>
+          <span className='text-dark fs-5'> Hello, John Doe</span>
+          <img src={userLogo} alt='user logo' className='img-fluid user_profile rounded-circle user_profile_dropdown border border-1 '
+          onClick={() => userProfileRef.current.classList.toggle('show')}
+           />
+          {/* <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
+            <Button variant="light">
+            <img src={userLogo} alt='user logo' className='img-fluid user_profile rounded-circle user_profile_dropdown border border-1 ' />
+            </Button>
+          </OverlayTrigger> */}
+
           </nav>
           </div>
+
 
 
           {/* collapsible  */}
@@ -228,6 +273,8 @@ import { faUser,faGear,faRightFromBracket } from "@fortawesome/free-solid-svg-ic
                 <li className=' d-flex gap-3 align-items-center'> <FontAwesomeIcon icon={faRightFromBracket} />  Logout </li>
               </ul>
           </div>
+
+
         
           
           <div className="row height_90 overflow-y-scroll  px-3 px-md-5 pb-5">

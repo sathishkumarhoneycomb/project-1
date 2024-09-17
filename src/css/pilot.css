@@ -364,3 +364,9 @@
   border-bottom: 2px solid black;
 }
 
+
+/* user profile card  */
+.user_profile_card_img {
+  width: 70%;
+  margin: 0 auto;
+}
