@@ -37,6 +37,9 @@ const AddNominee = () => {
     }
 
     const deleteRow = (i) => {
+        // ask for confirmation 
+        let userChoice = window.confirm("Do you want to delete this nominee?")
+        if(!userChoice) return;
         let isMinor = false;
         const updatedFormData = formData.filter((data, index) => {
             if(data.isNomineeMinor) isMinor = true;
@@ -72,6 +75,7 @@ const AddNominee = () => {
     // form submission 
     const handleSubmit = (e) => {
         e.preventDefault();
+        alert('Wow!!!!')
 
         // convert all the data into FormData and send it to the server 
         const finalData = new FormData();
@@ -115,15 +119,15 @@ const AddNominee = () => {
             <h4 className='text-uppercase text-success text-center card py-4 rounded-0 mb-4'> Add Nominee </h4>
 
             <div>
-                <p className='fw-semibold mb-2 text-uppercase'> Member ID: </p>
-                <p className='border-3 table_primary_color   d-inline-block  py-1 ps-2 pe-5 ls_1 fw-semibold'> 30497539074234ALS3423 </p>
+                <p className='fw-semibold mb-3 text-uppercase border border-2 border-top-0  border-end-0 border-start-0 border-dark   width_max_content'> Member ID: </p>
+                <p className='border-3 table_primary_color d-inline-block  py-1 ps-2 pe-5 ls_1 fw-semibold'> 30497539074234ALS3423 </p>
 
                 <p className='width_max_content border border-2 border-top-0  border-end-0 border-start-0 border-dark text-uppercase fw-semibold mt-5'> Nominee Details </p>
-                
+                <form className='table-responsive' method="post" onSubmit={handleSubmit}>
                 {/* Nominee Table  */}
-                <div>
+                <div className="table-responsive">
                 
-                <form className='table-responsive'>
+              
                     <table className='table nominee_table table-striped'>
                         <thead className='table-primary'>
                         <tr>
@@ -149,6 +153,7 @@ const AddNominee = () => {
                               placeholder='Nominee name'
                             value={data.nomineeName}
                             onChange={(e) => handleChange(e, index)}
+                            required
                                /></td>
                               
                               <td> <input type="number" 
@@ -157,6 +162,7 @@ const AddNominee = () => {
                               placeholder='Age (in yrs)'
                               value={data.nomineeAge}
                               onChange={(e) => handleChange(e, index)}
+                              required
                                /></td>
                               
                               <td> <input type="text" 
@@ -165,12 +171,14 @@ const AddNominee = () => {
                               placeholder='Relationship with Manager'
                               value={data.nomineeRelationship}
                               onChange={(e) => handleChange(e, index)}
+                              required
                                /></td>
                               
                               <td> <select name='nomineeGender' 
                               className='form-control rounded-0 border-3'
                               value={data.nomineeGender}
                               onChange={(e) => handleChange(e, index)}
+                              required
                               >
                                       <option value="" disabled selected> Gender </option>
                                       <option value="female" > Female </option>
@@ -185,6 +193,7 @@ const AddNominee = () => {
                               placeholder='% Allocation'
                               value={data.nomineeAllocation}
                               onChange={(e) => handleChange(e, index)}
+                              required
                                /></td>
                               
                               <td> <input type='text' 
@@ -193,6 +202,7 @@ const AddNominee = () => {
                               placeholder='address' 
                               value={data.nomineeAddress}
                               onChange={(e) => handleChange(e, index)}
+                              required
                               /></td>
                               
                               <td> <input type="checkbox" 
@@ -212,12 +222,26 @@ const AddNominee = () => {
                         </tbody>
 
                     </table>
-           
-                    </form>
 
-                    <button className='btn btn-outline-primary py-1 ' 
+
+           
+                    <div className="d-flex justify-content-end">
+                    {/* <button className='btn btn-outline-success py-1 rounded-0 px-3' type="button"
                     onClick={addRow}
-                    > Add more  </button>
+                    > Add more  </button> */}
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    height="44px" 
+                    viewBox="0 -960 960 960" 
+                    width="44px" 
+                    className="border cursor_pointer add_more_btn"
+                    onClick={addRow}
+                    
+                    >
+                    <title> add one more nominee </title>
+                    <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg>
+                    </div>
+
+
                 </div>
 
                 {/* Appointee Table  */}
@@ -246,12 +270,14 @@ const AddNominee = () => {
                         className="form-control"
                         value={data.appointeeName}
                         onChange={(e) => handleAppointeeData(e, index)}
+                        required
                      /></td>
                      <td> <input type="number" 
                      name="appointeeAge"
                     className="form-control"
                     value={data.appointeeAge}
                     onChange={(e) => handleAppointeeData(e,index)}
+                    required
                      />
                      </td>
                      <td><input type="text" 
@@ -259,6 +285,7 @@ const AddNominee = () => {
                     className="form-control"
                     value={data.appointeeRelationship}
                     onChange={(e) => handleAppointeeData(e, index)}
+                    required
                      />
                      </td>
                      <td>
@@ -266,6 +293,7 @@ const AddNominee = () => {
                         className="form-control"
                         value={data.appointeeGender}
                         onChange={(e) => handleAppointeeData(e,index)}
+                        required
                         >
                             <option value="" disabled> Gender </option>
                             <option value="male"> Male </option>
@@ -278,6 +306,7 @@ const AddNominee = () => {
                      className="form-control"
                      value={data.appointeeAddress}
                      onChange={(e) => handleAppointeeData(e,index)}
+                     required
                       /> </td>
                      <td className="opacity-0 pe-none"> <input type="hidden" name="nomineeId" className="form-control" value={data.nomineeId} /> </td>
                         <td className="opacity-0 pe-none"> </td>
@@ -292,6 +321,12 @@ const AddNominee = () => {
 
 
                 }
+                <div className=" d-flex justify-content-center">
+                <button className="btn btn-outline-primary py-1 mt-5 px-5 rounded-0 " type="submit"> Submit </button>
+                </div>
+
+                </form>
+
                           </div>
 
 

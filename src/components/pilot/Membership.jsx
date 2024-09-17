@@ -3,7 +3,7 @@ import Modal from 'react-modal';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX} from "@fortawesome/free-solid-svg-icons";
 
-
+// modal style for self declaration 
 const customStyles = {
   content: {
     top: '50%',
@@ -17,6 +17,7 @@ const customStyles = {
   },
 };
 
+// modal style for GMC confirmation 
 const customGmcModalStyle = {
   content: {
     top: '50%',

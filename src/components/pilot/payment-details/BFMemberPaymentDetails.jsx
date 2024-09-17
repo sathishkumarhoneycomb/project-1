@@ -17,7 +17,7 @@ const BFMemberPaymentDetails = () => {
         <>
         <div>
 
-<div className="card">
+<div className="card mb-4 mb-lg-0">
                         
                         <div className="card-header text-uppercase d-block d-md-flex justify-content-between  align-items-center">
                             <h6 className="text-success m-0 lh-lg"> Payment Details (Benevolent Fund Membership) <span className="text-danger"> (due on 05-09-2024)  </span> </h6>

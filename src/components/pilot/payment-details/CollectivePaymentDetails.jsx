@@ -15,7 +15,7 @@ const CollectivePaymentDetails = () => {
     return (
         <>
         <div>
-        <div className="card">
+        <div className="card mb-4 mb-lg-0">
 
 <div className="card-header text-uppercase d-block d-md-flex justify-content-between  align-items-center">
     <h6 className="text-success m-0 lh-lg"> Collective Payment Details  </h6>

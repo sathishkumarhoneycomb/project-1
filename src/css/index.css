@@ -122,7 +122,7 @@
   }
 
   .outline_none {
-    outline: none;
+    outline: none !important;
   }
 
   
@@ -137,6 +137,17 @@
 
 .width_max_content {
   width: max-content;
+}
+
+
+.cursor_pointer  {
+  cursor: pointer;
+}
+
+.nav-link.active , .nav-link:hover {
+  /* background-color: #748ffc; */
+  background-color: #6D98CA;
+  border-radius: 5px;
 }
 
 

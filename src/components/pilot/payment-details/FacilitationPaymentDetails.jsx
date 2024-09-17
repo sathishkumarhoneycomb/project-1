@@ -2,12 +2,12 @@
 const FacilitationPaymentDetails = () => {
     return (
             <>
-                 <div className="card">
+                 <div className="card mb-4 mb-lg-0">
                  <div className="card-header text-uppercase d-block d-md-flex justify-content-between  align-items-center">
                             <h6 className="text-success m-0 lh-lg"> Facilitation Payment Details  </h6>
                         </div>
 
-                        <div className="card-body">
+                        <div className="card-body table-responsive">
                             <table className="table table-stripped">
                                 <thead>
                                     <tr >

@@ -2,7 +2,7 @@ function ProfilePage() {
 
     return (
         <>
-            <section className="mb-5 pb-5 pt-2 px-5">
+            <section className="mb-5 pb-5 pt-2 px-2 px-md-3 px-lg-5">
 
                 <div className="card">
                     <header className="card-header bg_dark_blue d-flex justify-content-center align-items-center mb-3">
@@ -181,12 +181,12 @@ function ProfilePage() {
 
                             {/*single col -  GMC  */}
 
-                            <div className="form-group d-block d-md-flex gap-5 mb-5">
+                            <div className="form-group d-block d-md-flex align-items-start gap-5 mb-5">
                                 <label className="fw-semibold"> Do you want to become ALPA Group Medical Coverage(ALPA GMC)? </label>
                                 <div className=" d-flex mt-3 mt-md-0 gap-5">
-                                <label>
+                                <label className="d-flex align-items-center gap-2">
                                 <input type="radio"  className="scale_5" name="gmc" value="no" /> No  </label>
-                                <label>
+                                <label className="d-flex align-items-center gap-2">
                                 <input type="radio"  className="scale_5" name="gmc" value="yes" /> Yes </label>
                                 </div>
                             </div>
@@ -220,7 +220,7 @@ function ProfilePage() {
                             {/* single col - submit button */}
 
                             <div className="form-group mb-2 d-flex justify-content-center">
-                                <button className="btn bg_dark_blue text-white fw-semibold  w-50" > Update </button>
+                                <button className="btn btn-outline-primary rounded-0 text-uppercase fw-semibold  w-50" > Update </button>
                                 
                             </div>
 

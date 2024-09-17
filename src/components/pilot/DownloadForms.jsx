@@ -16,8 +16,8 @@ const DownloadForms = () => {
             </header>
 
             <div className="">
-                <p> Click on the button below to download your form </p>
-                <button className="btn border-primary rounded-0 p-2 text-uppercase text-primary d-flex align-items-center gap-2"> Claim Form 
+                <span className="d-block text-muted mb-3"> 👇 Click on the button below to download your form </span>
+                <button className="btn btn-outline-primary rounded-0 d-flex align-items-center gap-2 text-uppercase"> Claim Form 
                 <FontAwesomeIcon icon={faDownload} />
                 </button>
             </div>

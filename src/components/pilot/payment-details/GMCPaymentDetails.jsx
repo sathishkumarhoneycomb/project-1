@@ -13,7 +13,7 @@ const GMCPaymentDetails = () => {
 
     return (
        <>
-                                <div className="card">
+                                <div className="card ">
 
 <div className="card-header text-uppercase d-block d-md-flex justify-content-between  align-items-center">
     <h6 className="text-success m-0 lh-lg"> GMC Payment Details </h6>
@@ -22,7 +22,7 @@ const GMCPaymentDetails = () => {
     > Add Payment </button>
 </div>
 
-<div className="card-body">
+<div className="card-body table-responsive">
     <table className="table table-stripped">
         <thead>
             <tr >

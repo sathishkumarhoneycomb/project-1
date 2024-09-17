@@ -1,6 +1,16 @@
+:root {
+    --dark-blue : #0C53A6;
+    --light-blue : #6D98CA;
+}
 
+.view_icon {
+  fill: var(--light-blue);
+  transition: .4s all;
+}
 
-
+.view_icon:hover {
+  fill: var(--dark-blue)
+}
 
 .side_100 {
     height: 100vh !important;
@@ -19,6 +29,11 @@
   column-gap: 2rem;
   max-width: 80%;
 }
+
+.dashboard_news_card {
+  height: 400px;
+}
+
 
 /* top area  */
 .user_profile {
@@ -133,6 +148,7 @@
     background-color: #1864ab;
 
   }
+
   
   /* Rounded sliders */
   .slider.round , .sliderBf.round  {
@@ -162,10 +178,7 @@
 .annual_payment_modal .modal-header .btn-close {
   filter: invert(1); /* Makes the close button white */
   margin-right: 0.2rem;
-  }
-
-
-
+}
 
 /* Discussion Form  */
 .pilot_discussion_form_table tr, .pilot_discussion_form_table td, .pilot_discussion_form_table th {
@@ -174,8 +187,7 @@
 
 .nominee_table tr {
   /* border: 0.0001px solid #919293;
-   */
-   
+   */  
 }
 
 
@@ -315,3 +327,40 @@
 .view_history_width {
   min-height: 50px !important;
 }
+
+.delete_nominee_btn {
+  fill: #ff8787;
+  transition: .4s all;
+}
+
+.delete_nominee_btn:hover {
+  fill: #f03e3e;
+}
+
+.add_more_btn {
+  fill:#69db7c ;
+  transition: .4s all;
+}
+
+.add_more_btn:hover {
+  fill: #2f9e44;
+  }
+
+  /* view post page  */
+  .post_meta_details {
+    font-size: 0.9rem;
+  }
+
+.user_input_comment {
+  border:none;
+  outline: none;
+  width:100%;
+  transition: .1s all;
+}
+
+.user_input_comment:focus {
+  
+  border: none;
+  border-bottom: 2px solid black;
+}
+

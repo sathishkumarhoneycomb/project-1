@@ -33,8 +33,10 @@ const ClaimForm = () => {
                 </ol>
 
                 <div className="">
-                <button className="btn border-primary rounded-0 p-2 text-uppercase text-primary d-flex align-items-center gap-2"> Closure Form 
+                <span className="text-muted mb-2 d-block"> 👇 Click on the button below to download a copy of the closure form</span>
+                <button className="btn btn-outline-primary d-flex gap-2 align-items-center rounded-0 text-uppercase"> Closure Form 
                 <FontAwesomeIcon icon={faUpload} />
+                
                 </button>
             </div>
 

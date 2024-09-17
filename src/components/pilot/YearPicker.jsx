@@ -10,7 +10,7 @@ const YearPicker = () => {
   return (
     <section className='d-flex align-items-end justify-content-end gap-4 mb-lg-4 mb-5'>
         <div> 
-            <button className='btn btn-outline-primary text-uppercase view_history_width'> view payment history  </button>
+            <button className='btn btn-outline-primary rounded-0 text-uppercase view_history_width'> view payment history  </button>
         </div>
         <div>
             <span className='d-block mb-2'> Year Filter</span>
@@ -19,7 +19,7 @@ const YearPicker = () => {
         onChange={date => setSelectedDate(date)}
         showYearPicker
         dateFormat="yyyy"
-        className='form-control view_history_width'
+        className='form-control view_history_width rounded-0 border-1 border-dark'
       />
 
 
