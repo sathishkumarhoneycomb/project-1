@@ -1,5 +1,7 @@
   /* custom colors  */
-
+body {
+  overflow-y: hidden;
+}
   .color_light_gray {
     color: #6F6E6E;
   }
@@ -24,6 +26,11 @@
   .bg_light_shade_blue {
     background-color: rgba(232, 240, 254, 1)
   }
+
+  .blue-gradient {
+    background: linear-gradient(40deg,  #45cafc, #303f9f) !important;
+  }
+  
 
   .table_primary_color {
     background-color: #cfe2ff;
@@ -73,6 +80,9 @@
 
   .date_text {
     font-size:0.9rem;
+  }
+  .small_text {
+    font-size: 0.8rem;
   }
 
   .small_placeholder::placeholder {

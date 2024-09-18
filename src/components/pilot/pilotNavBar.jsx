@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-import PilotFooter from './PilotFooter';
+import ConsoleFooter from './ConsoleFooter.jsx';
 
 import userLogo from "../../../public/assets/images/images.jpeg";
 
@@ -241,7 +241,7 @@ import UserProfileCard from './UserProfileCard';
         <div className='ps-2'>
           <nav className='d-none d-md-flex gap-3 justify-content-end align-items-center  text-white px-3 py-1 border border-start-0 border-end-0 border-bottom-1 border-success  mb-4'>
           <span className='text-dark fs-5'> Hello, John Doe</span>
-          <img src={userLogo} alt='user logo' className='img-fluid user_profile rounded-circle user_profile_dropdown border border-1 '
+          <img src={userLogo} alt='user logo' className='img-fluid nav_profile_logo rounded-circle user_profile_dropdown border border-1 '
           onClick={() => userProfileRef.current.classList.toggle('show')}
            />
           {/* <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
@@ -261,7 +261,7 @@ import UserProfileCard from './UserProfileCard';
           ref={userProfileRef}
           className=' user_card  bg_dark_blue text-white  d-flex flex-column  rounded-4 py-4 ms-5 px-3  ' >
             <div className='d-flex flex-column align-items-center '>
-              <img src={userLogo} alt='user logo pic img-fluid' className='user_profile rounded-circle border  border-2 border-light d-block ' />
+              <img src={userLogo} alt='user logo pic img-fluid' className='user_profile_img rounded-circle border  border-2 border-light d-block ' />
               <p className='fw-semibold mt-3 fs-5'> Hello, Test user </p>
               </div>
               <hr className='m-0 mb-2'/>
@@ -290,7 +290,7 @@ import UserProfileCard from './UserProfileCard';
 
            
           </div>
-          <PilotFooter />
+          <ConsoleFooter />
 
           
 

@@ -36,7 +36,7 @@
 
 
 /* top area  */
-.user_profile {
+.nav_profile_logo {
   height: 55px;
   cursor: pointer;
 }
@@ -56,11 +56,11 @@
 }
 
 .show {
-   pointer-events: all;
-   opacity: 1;
+   pointer-events: all !important;
+   opacity: 1 !important;
 }
 
-.user_card .user_profile {
+.user_profile_img {
   height: 90px;
 }
 

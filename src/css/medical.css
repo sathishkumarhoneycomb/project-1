@@ -1,0 +1,46 @@
+/* Unapproved Applications  */
+.small_width {
+    width: 60px !important;
+}
+
+.add_suggestion_icon , .edit_icon {
+    fill: #ffa94d;
+}
+
+.add_suggestion_icon:hover , .edit_icon:hover {
+    fill: #e8590c;
+}
+
+.upload_icon {
+    fill: #69db7c;  
+}
+
+.upload_icon:hover {
+    fill: #2f9e44;
+}
+
+
+/* Rejected Applications  */
+
+.medical_user_profile_card {
+    position: absolute;
+    width: 270px;
+     right: 5px;
+     top: -5px;
+    z-index: 999;
+    pointer-events: none;
+    opacity: 0;
+    transition: .4s all;
+}
+
+.bg_gray {
+    background-color: #f1f3f5 !important;
+}
+
+.medical_user_profile_card img {
+    height: 100px;
+    border: 2px solid #fff
+}
+
+
+

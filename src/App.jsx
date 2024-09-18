@@ -7,7 +7,10 @@ import "bootstrap/js/dist/dropdown";
 import "./css/App.scss";
 import "./css/queries.css";
 import "./css/pilot.css";
-import "./css/pilot-queries.css"
+import "./css/pilot-queries.css";
+import "./css/medical.css";
+import "./css/admin.css";
+
 
 // Website Pages 
 import HomePage from "./pages/HomePage";
@@ -36,6 +39,15 @@ import ClaimForm from "./components/pilot/ClaimForm.jsx";
 import AddNominee from "./components/pilot/payment-details/AddNominee.jsx";
 import AddPost from "./components/pilot/addPost.jsx";
 import ViewPost from "./components/pilot/ViewPost.jsx";
+import Medical from "./components/medical/MedicalNavbar.jsx";
+import MedicalNavBar from "./components/medical/MedicalNavbar.jsx";
+import MedicalProfilePage from "./components/medical/MedicalProfilePage.jsx";
+import UnapprovedApplications from "./components/medical/UnapprovedApplications.jsx";
+import RejectedApplications from "./components/medical/RejectedApplications.jsx";
+import ApprovedApplications from "./components/medical/ApprovedApplications.jsx";
+import { Nav } from "react-bootstrap";
+import AdminNavbar from "./components/admin/AdminNavbar.jsx";
+import AdminDashboard from "./components/admin/AdminDashboard.jsx";
 
 
 
@@ -45,29 +57,22 @@ function App() {
 
       <BrowserRouter>
         <Routes>
+          {/* Website  */}
           <Route  path="/"  element={<ResNavBar />}>
             <Route index element={<HomePage />} />
             <Route path="/about" element={<AboutUsPage />} />
-
             <Route path="/contact" element={<ContactUsPage />} />
-
             <Route path="/member-signup" element={<MemberPage />} />
-
             <Route path="/news-events" element={<NewsEventsPage />} />
-
-            <Route
-              path="/alpa-benevolent-fund"
-              element={<BenevolentFundPage />}
-            />
-
+            <Route path="/alpa-benevolent-fund" element={<BenevolentFundPage />} />
             <Route path="/medical-insurance" element={<MedicalInsurancePage /> } /> 
             <Route path="/login" element={<LoginPage /> } />
-          
-              <Route path="/terms-and-condition" element={<TcPage /> } />
+            <Route path="/terms-and-condition" element={<TcPage /> } />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage /> } /> 
             <Route path="/disclaimer-policy" element={<DisclaimerPolicyPage /> }/>
           </Route>
 
+          {/* Pilot Console  */}
           <Route path="/pilot" element={<PilotNavBar />} >
             <Route index element={<Navigate replace to="dashboard" />} />
               <Route path='dashboard' element={<DashBoard />} />
@@ -83,7 +88,20 @@ function App() {
               <Route path="nominee/add" element={<AddNominee />} />
               <Route path="discussion-forum/create" element={<AddPost />} />
               <Route path="discussion-forum/11" element={<ViewPost />} />
+          </Route>
 
+          {/* Medical Console  */}
+          <Route path="/medical" element={<MedicalNavBar />}>
+              <Route index element={<Navigate replace to="profile" />}/>
+              <Route path="profile" element={<MedicalProfilePage />} />
+              <Route path="unapproved-applications" element={<UnapprovedApplications />} />
+              <Route path="rejected-applications" element={<RejectedApplications />} />
+              <Route path="alpa-bf-members" element={<ApprovedApplications />} />
+          </Route>
+
+          <Route path="/admin" element={<AdminNavbar />} >
+            <Route index element={<Navigate replace to="dashboard" />} />
+            <Route path="dashboard" element={<AdminDashboard />}/>
           </Route>
 
 
