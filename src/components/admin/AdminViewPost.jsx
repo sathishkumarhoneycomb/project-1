@@ -1,7 +1,8 @@
+
 import userLogo from "../../../public/assets/images/images.jpeg";
 
 
-const ViewPost = () => {
+const AdminViewPost = () => {
     return (
         <section>
             {/* The actual post  */}
@@ -31,7 +32,7 @@ const ViewPost = () => {
                     <form> 
                     <div className="form-group d-flex gap-3 mb-3">
 
-                        <img src={userLogo} className="comment_user_profile rounded-circle" />
+                        <img src={userLogo} className="comment_user_profile  rounded-circle" />
                     
                         <input type="text" name="userReply" placeholder="Leave a reply..." className="outline_none  user_input_comment " />
                         </div>
@@ -73,4 +74,5 @@ const ViewPost = () => {
     );
 }
 
-export default ViewPost;
+export default AdminViewPost;
+

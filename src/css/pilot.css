@@ -60,6 +60,10 @@
    opacity: 1 !important;
 }
 
+.comment_user_profile {
+  height: 50px;
+}
+
 .user_profile_img {
   height: 90px;
 }
@@ -328,23 +332,7 @@
   min-height: 50px !important;
 }
 
-.delete_nominee_btn {
-  fill: #ff8787;
-  transition: .4s all;
-}
 
-.delete_nominee_btn:hover {
-  fill: #f03e3e;
-}
-
-.add_more_btn {
-  fill:#69db7c ;
-  transition: .4s all;
-}
-
-.add_more_btn:hover {
-  fill: #2f9e44;
-  }
 
   /* view post page  */
   .post_meta_details {

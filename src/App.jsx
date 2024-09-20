@@ -48,6 +48,17 @@ import ApprovedApplications from "./components/medical/ApprovedApplications.jsx"
 import { Nav } from "react-bootstrap";
 import AdminNavbar from "./components/admin/AdminNavbar.jsx";
 import AdminDashboard from "./components/admin/AdminDashboard.jsx";
+import AdminProfilePage from "./components/admin/AdminProfilePage.jsx";
+import AdminUnapprovedApplications from "./components/admin/unapproved-applications/AdminUnapprovedApplications.jsx";
+import AdminApprovedApplications from "./components/admin/approved-applications/AdminApprovedApplications.jsx";
+import AdminOrdinaryMember from "./components/admin/ordinary-member/AdminOrdinaryMember.jsx";
+import AdminBfMember from "./components/admin/bf-member/AdminBfMember.jsx";
+import AlpaAdminsPage from "./components/admin/AlpaAdminsPage.jsx";
+import AdminNewsEventsPage from "./components/admin/AdminNewsEventsPage.jsx";
+import AdminDiscussionForum from "./components/admin/AdminDiscussionForum.jsx";
+import AdminAddPost from "./components/admin/AdminAddPost.jsx";
+import AdminViewPost from "./components/admin/AdminViewPost.jsx";
+import AdminDownloadedForms from "./components/admin/AdminDownloadedForms.jsx";
 
 
 
@@ -102,6 +113,17 @@ function App() {
           <Route path="/admin" element={<AdminNavbar />} >
             <Route index element={<Navigate replace to="dashboard" />} />
             <Route path="dashboard" element={<AdminDashboard />}/>
+            <Route path="profile" element={<AdminProfilePage />}/>
+            <Route path="unapproved-applications" element={<AdminUnapprovedApplications />} />
+            <Route path="approved-applications" element={<AdminApprovedApplications />} />
+            <Route path="pilots" element={<AdminOrdinaryMember />} />
+            <Route path="alpa-bf-members" element={<AdminBfMember  />} />
+            <Route path="alpa-users" element={<AlpaAdminsPage />} />
+            <Route path="news-and-events" element={<AdminNewsEventsPage />} />
+            <Route path="discussion-forum" element={<AdminDiscussionForum />} />
+            <Route path="discussion-forum/create" element={<AdminAddPost />} />
+            <Route path="discussion-forum/:id" element={<AdminViewPost  />} />
+            <Route path="forms-downloaded" element={<AdminDownloadedForms />} />
           </Route>
 
 

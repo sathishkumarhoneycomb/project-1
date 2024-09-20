@@ -2,7 +2,7 @@
 
 const RejectedApplications = () => {
     return (
-        <section>
+        <section className="">
         <header className="py-4 text-center card rounded-0 mb-4">
             <h4 className="text-uppercase text-success m-0"> List of Rejected Members - ALPA + BF (4 Members) </h4>
         </header>

@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faUser,faMoneyBill} from "@fortawesome/free-solid-svg-icons";
 
-
+import { Link } from "react-router-dom";
 
 const AdminDashboard = () => {
 
@@ -75,7 +75,7 @@ const AdminDashboard = () => {
 
     return (
         <section>
-            <div className="admin_dashboard_cards">
+            <div className="admin_dashboard_cards mb-5">
                 {/* <div className=" col-lg-4 card py-2 rounded-0 d-flex flex-row gap-3 align-items-center">
                 <div className={`${bg} py-4 px-4 width_max_content rounded-1`}>
                 <FontAwesomeIcon icon={faUser} className="text-white fs-4 py-1 px-1"/>
@@ -100,12 +100,85 @@ const AdminDashboard = () => {
                 }
             </div>
 
-            <div>
-                <div className="card rounded-0">
-                        <header className="card-header py-2 px-2 bg-primary ">
-                            <h3 className="text-uppercase text-white fs-4"> recent news & events </h3>
+            <div className="d-block d-md-flex gap-5">
+                <div className="card rounded-0 admin_news_cards_container mb-5 ">
+                        <header className="card-header py-2 px-2 bg-primary rounded-0 ">
+                            <h3 className="text-uppercase text-white fs-4 text-center py-3"> recent news & events </h3>
                         </header>
-                </div>
+                        <div className="card-body rounded-0  d-flex flex-column gap-4 overflow-y-scroll py-4">
+                        
+                            <div className="card rounded-0 shadow-md">
+                                <h5 className="card-header card-title py-2 "> Title 1 </h5>
+                                <div className="">
+                                    <p className="truncate_three_line px-3 "> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                                    <span className="text-end d-block"> <Link to="#" className="text-decoration-none"> Read more... </Link></span>
+                                </div>
+                            </div> 
+                            <div className="card rounded-0 shadow-md">
+                                <h5 className="card-header card-title py-2 "> Title 1 </h5>
+                                <div className="">
+                                    <p className="truncate_three_line px-3 "> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                                    <span className="text-end d-block"> <Link to="#" className="text-decoration-none"> Read more... </Link></span>
+                                </div>
+                            </div> 
+                            <div className="card rounded-0 shadow-md">
+                                <h5 className="card-header card-title py-2 "> Title 1 </h5>
+                                <div className="">
+                                    <p className="truncate_three_line px-3 "> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                                    <span className="text-end d-block"> <Link to="#" className="text-decoration-none"> Read more... </Link></span>
+                                </div>
+                            </div> 
+                            <div className="card rounded-0 shadow-md">
+                                <h5 className="card-header card-title py-2 "> Title 1 </h5>
+                                <div className="">
+                                    <p className="truncate_three_line px-3 "> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                                    <span className="text-end d-block"> <Link to="#" className="text-decoration-none"> Read more... </Link></span>
+                                </div>
+                            </div> 
+                            </div>
+
+                        </div>
+
+
+                        {/* Recent Topics */}
+                        <div className="card rounded-0 admin_news_cards_container mb-5 ">
+                        <header className="card-header py-2 px-2 bg-primary rounded-0">
+                            <h3 className="text-uppercase text-white fs-4 text-center py-3"> recent Topics  </h3>
+                        </header>
+                        <div className="card-body rounded-0  d-flex flex-column gap-4 overflow-y-scroll py-4">
+                        
+                            <div className="card rounded-0 shadow-md">
+                                <h5 className="card-header card-title py-2 "> Title 1 </h5>
+                                <div className="">
+                                    <p className="truncate_three_line px-3 "> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                                    <span className="text-end d-block"> <Link to="#" className="text-decoration-none"> Read more... </Link></span>
+                                </div>
+                            </div> 
+                            <div className="card rounded-0 shadow-md">
+                                <h5 className="card-header card-title py-2 "> Title 1 </h5>
+                                <div className="">
+                                    <p className="truncate_three_line px-3 "> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                                    <span className="text-end d-block"> <Link to="#" className="text-decoration-none"> Read more... </Link></span>
+                                </div>
+                            </div> 
+                            <div className="card rounded-0 shadow-md">
+                                <h5 className="card-header card-title py-2 "> Title 1 </h5>
+                                <div className="">
+                                    <p className="truncate_three_line px-3 "> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                                    <span className="text-end d-block"> <Link to="#" className="text-decoration-none"> Read more... </Link></span>
+                                </div>
+                            </div> 
+                            <div className="card rounded-0 shadow-md">
+                                <h5 className="card-header card-title py-2 "> Title 1 </h5>
+                                <div className="">
+                                    <p className="truncate_three_line px-3 "> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                                    <span className="text-end d-block"> <Link to="#" className="text-decoration-none"> Read more... </Link></span>
+                                </div>
+                            </div> 
+                            </div>
+
+                        </div>
+        
             </div>
 
 

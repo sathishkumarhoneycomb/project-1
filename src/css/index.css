@@ -95,6 +95,10 @@ body {
     width: 60%;
   }
 
+  .small_width {
+    width: 60px !important;
+  }
+
   .inner_banner_text_block {
     width: 50%;
     transform: translate(-70%, -40%);
@@ -146,7 +150,7 @@ body {
 }
 
 .width_max_content {
-  width: max-content;
+  width: max-content !important;
 }
 
 
@@ -165,6 +169,117 @@ body {
   .mb-6 {
     margin-bottom: 6rem;
   }
+
+
+
+  /* icons  */
+  .reason_content_width {
+    width: 250px !important;
+  }
+
+.add_suggestion_icon , .edit_icon {
+    fill: #ffa94d;
+}
+
+.add_suggestion_icon:hover , .edit_icon:hover {
+    fill: #e8590c;
+}
+
+.upload_icon {
+    fill: #69db7c;  
+    transition: .4s all;
+
+}
+
+.upload_icon:hover {
+    fill: #2f9e44;
+}
+
+.approve_icon {
+  fill: #69db7c;
+  transition: .4s all;
+
+}
+
+.approve_icon:hover {
+  fill: #2f9e44;
+}
+.reject_icon {
+  fill: #ff8787;
+  transition: .4s all;
+}
+
+.reject_icon:hover {
+  fill: #f03e3e;
+}
+
+.delete_nominee_btn {
+  fill: #ff8787;
+  transition: .4s all;
+}
+
+.delete_nominee_btn:hover {
+  fill: #f03e3e;
+}
+
+.add_more_btn {
+  fill:#69db7c ;
+  transition: .4s all;
+}
+
+.add_more_btn:hover {
+  fill: #2f9e44;
+  }
+
+
+  .fill_blue {
+    fill: #6D98CA;
+    transition: .4s all;
+  }
+
+  .fill_blue:hover {
+    fill: #0C53A6;
+    transition: .4s all;
+  }
+
+  .fill_green {
+    fill: #69db7c;
+    transition: .4s all;
+  }
+
+  .fill_dark_green {
+    fill: #2f9e44;
+  }
+
+  .fill_dark_red {
+    fill: #e03131;
+  }
+
+  .fill_green:hover {
+    fill: #2f9e44;
+  }
+
+  .fill_red {
+    fill: #ff8787;
+    transition: .4s all;
+  }
+
+  .fill_red:hover {
+    fill: #f03e3e;
+  }
+
+  .fill_orange {
+    fill: #ffa94d;
+    transition: .4s all;
+  }
+
+  .fill_orange:hover {
+    fill: #e8590c;
+  }
+
+
+
+
 
 
 
@@ -201,3 +316,12 @@ body {
  
   
   }
+
+
+
+
+
+
+
+
+

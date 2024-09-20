@@ -4,3 +4,8 @@
     column-gap: 1.5rem;
     row-gap: 1.5rem;
 }
+
+.admin_news_cards_container {
+    height: 500px;
+    width: 450px;
+}
